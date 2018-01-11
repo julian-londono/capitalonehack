@@ -1,151 +1,151 @@
 {
     "Users":[
-      {
-          "name": "Name 1",
-          "balance": 0,
-          "purchases": [
-            {
-                "amount": 10000000,
-                "type": ""
-            }
-          ],
-          "loans": [
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            },
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            },
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            }
-          ],
-          "bills": [
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            }
-          ]
-      },
-      {
-          "name": "Name 2",
-          "balance": 0,
-          "purchases": [
-            {
-                "amount": 10000000,
-                "type": ""
-            }
-          ],
-          "loans": [
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            },
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            },
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            }
-          ],
-          "bills": [
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            }
-          ]
-      },
-      {
-          "name": "Name 3",
-          "balance": 0,
-          "purchases": [
-            {
-                "amount": 10000000,
-                "type": ""
-            }
-          ],
-          "loans": [
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            },
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            },
-            {
-                "amount": 10000000,
-                "type": "",
-                "apr": 0
-            }
-          ],
-          "bills": [
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            },
-            {
-                "amount": 10000000,
-                "type": ""
-            }
-          ]
-      }
+        {
+            "name": "Name 1",
+            "balance": 0,
+            "purchases": [
+                {
+                    "amount": 10000000,
+                    "type": ""
+                }
+            ],
+            "loans": [
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                },
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                },
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                }
+            ],
+            "bills": [
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "Name 2",
+            "balance": 0,
+            "purchases": [
+                {
+                    "amount": 10000000,
+                    "type": ""
+                }
+            ],
+            "loans": [
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                },
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                },
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                }
+            ],
+            "bills": [
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "Name 3",
+            "balance": 0,
+            "purchases": [
+                {
+                    "amount": 10000000,
+                    "type": ""
+                }
+            ],
+            "loans": [
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                },
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                },
+                {
+                    "amount": 10000000,
+                    "type": "",
+                    "apr": 0
+                }
+            ],
+            "bills": [
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                },
+                {
+                    "amount": 10000000,
+                    "type": ""
+                }
+            ]
+        }
     ]
 }

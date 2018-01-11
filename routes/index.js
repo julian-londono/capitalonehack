@@ -2,8 +2,11 @@
 
 const express = require('express');
 const router = express.Router();
-const constants = require('../constants');
+
+const constants = require('../constants'); // separate module for constants
 const helpers = require('../custom/helpers'); // custom helpers we can use
+
+const user_data = require('../userdata.json'); // static user data
 
 // POST '/'
 router.post('/', function(req, res) {
