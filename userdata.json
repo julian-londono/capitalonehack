@@ -3,9 +3,11 @@
       {
           "name": "Name 1",
           "balance": 0,
+          "remainingCredit": 0,
           "purchases": [
             {
                 "amount": 10000000,
+                "category": "",
                 "type": ""
             }
           ],
@@ -52,9 +54,11 @@
       {
           "name": "Name 2",
           "balance": 0,
+          "remainingCredit": 0,
           "purchases": [
             {
                 "amount": 10000000,
+                "category": "",
                 "type": ""
             }
           ],
@@ -101,9 +105,11 @@
       {
           "name": "Name 3",
           "balance": 0,
+          "remainingCredit": 0,
           "purchases": [
             {
                 "amount": 10000000,
+                "category": "",
                 "type": ""
             }
           ],
