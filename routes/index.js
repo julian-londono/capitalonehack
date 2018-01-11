@@ -3,6 +3,7 @@
 const express = require('express');
 const router = express.Router();
 const constants = require('../constants');
+const helpers = require('../custom/helpers'); // custom helpers we can use
 
 // POST '/'
 router.post('/', function(req, res) {
@@ -16,11 +17,11 @@ router.post('/', function(req, res) {
     const actionHandlers = {
         // The default welcome intent has been matched, welcome the user (https://dialogflow.com/docs/events#default_welcome_intent)
         'input.welcome': () => {
-            sendResponse('Hello World!'); // Send simple response to user
+            sendResponse('Hey there!'); // Send simple response to user
         },
         'actionAnalysis': () => {
             // Analysis of money habits
-            console.dir(req.body)
+
             sendResponse('No logic here for actionAnalysis...awkward...');
         },
         'actionAvailable': () => {
