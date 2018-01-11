@@ -5,22 +5,22 @@ const router = express.Router();
 const constants = require('../constants');
 
 // POST '/'
-router.post('/', function(request, response) {
+router.post('/', function(req, res) {
     // An action is a string used to identify what needs to be done in fulfillment
-    let action = (request.body.queryResult.action) ? request.body.queryResult.action : 'default';
+    let action = (req.body.queryResult.action) ? req.body.queryResult.action : 'default';
 
     // Parameters are any entites that Dialogflow has extracted from the request.
-    let parameters = request.body.queryResult.parameters || {}; // https://dialogflow.com/docs/actions-and-parameters
+    let parameters = req.body.queryResult.parameters || {}; // https://dialogflow.com/docs/actions-and-parameters
 
     // Create handlers for Dialogflow actions as well as a 'default' handler
     const actionHandlers = {
         // The default welcome intent has been matched, welcome the user (https://dialogflow.com/docs/events#default_welcome_intent)
         'input.welcome': () => {
-            sendResponse('Hello, Welcome to my Dialogflow agent!'); // Send simple response to user
+            sendResponse('Hello World!'); // Send simple response to user
         },
         'actionAnalysis': () => {
             // Analysis of money habits
-
+            console.dir(req.body)
             sendResponse('No logic here for actionAnalysis...awkward...');
         },
         'actionAvailable': () => {
@@ -48,7 +48,7 @@ router.post('/', function(request, response) {
 
             sendResponse('No logic here for actionSpending...awkward...');
         },
-        'actionPurchaces': () => {
+        'actionPurchases': () => {
             // Get large or worrying purchases
 
             sendResponse('No logic here for actionPurchaces...awkward...');
@@ -115,7 +115,7 @@ router.post('/', function(request, response) {
         let responseJson = {
             fulfillmentText: responseToUser
         }; // displayed response
-        return response.json(responseJson); // Send response to Dialogflow
+        return res.json(responseJson); // Send response to Dialogflow
     }
 
 });
