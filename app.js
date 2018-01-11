@@ -23,4 +23,4 @@ app.use('/', index); //attatch index routes with base uri '/'
 const port = process.env.PORT || 3000;
 
 app.listen(port);
-console.log('Chatbot runs on ' + port);
+console.log('Bot Is Running on localhost:' + port);
