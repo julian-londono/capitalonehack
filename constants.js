@@ -1,0 +1,9 @@
+const PROJECT_ID = 'latipac-9b664';
+const CLIENT_ACCESS_TOKEN = '694d376e153c4ffb86deb6336b3bb44e';
+const DEVELOPER_ACCESS_TOKEN = 'cb8d7095e6ff41f6a4d483fc1c29e3d3';
+
+module.exports = {
+    PROJECT_ID,
+    CLIENT_ACCESS_TOKEN,
+    DEVELOPER_ACCESS_TOKEN
+}

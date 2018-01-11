@@ -1,0 +1,22 @@
+{
+  "name": "capitalonehack",
+  "version": "1.0.0",
+  "description": "Capital One Hack",
+  "main": "app.js",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.1",
+    "mongoose": "^4.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julian-londono/capitalonehack.git"
+  }
+}
