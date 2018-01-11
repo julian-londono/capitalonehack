@@ -24,13 +24,14 @@ router.post('/', function(req, res) {
         },
         'actionAnalysis': () => {
             // Analysis of money habits
-
+            
             sendResponse('No logic here for actionAnalysis...awkward...');
         },
         'actionAvailable': () => {
             // Get avaliable credit
-
-            sendResponse('No logic here for actionAvailable...awkward...');
+            const firstUsersData = user_data.Users[0]; // Extract The User's specific data
+            const response = `Sure ${firstUsersData.name}, you have $${firstUsersData.remainingCredit} of credit left for this month.`; // Format Response
+            sendResponse(response);
         },
         'actionBalance': () => {
             // Get amount in savings or checking account

@@ -1,7 +1,7 @@
 {
     "Users":[
       {
-          "name": "Name 1",
+          "name": "Ben",
           "balance": 0,
           "remainingCredit": 0,
           "purchases": [
@@ -52,7 +52,7 @@
           ]
       },
       {
-          "name": "Name 2",
+          "name": "Nick",
           "balance": 0,
           "remainingCredit": 0,
           "purchases": [
@@ -103,7 +103,7 @@
           ]
       },
       {
-          "name": "Name 3",
+          "name": "Julian",
           "balance": 0,
           "remainingCredit": 0,
           "purchases": [
