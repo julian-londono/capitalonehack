@@ -1,14 +1,16 @@
+const user_data = require('../userdata.json'); // static user data
+
 function getTrans(){
 
 }
 
 function getLargePurchases(){
-	var mydata = JSON.parse("..\userdata.json");
-	
-	var min = Number.MAX_VALUE;
 
-	var userinfo = {};
-	min = parameters.unit-currency;
+	const min = Number.MAX_VALUE;
+
+	const firstUsersData = user_data.Users[0]; // Data for first user
+
+	min = parameters.unit - currency;
 	var numberToDisplay = 3;
 
 
