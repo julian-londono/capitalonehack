@@ -77,7 +77,7 @@ function getLargePurchases(min, numberToDisplay){
 
 	output += `Here are your top ${numberToDisplay} most expensive purchases. `;
 
-	for (let i = 0; i < purchases.length;i++){
+	for (let i = 0; i < purchases.length; i++){
 		if (i < numberToDisplay && purchases[i].amount >= min){
 
 			// Make sure the 'and' is onal appended if it is not the last clause
@@ -99,6 +99,12 @@ function getLargePurchases(min, numberToDisplay){
 	return output;
 }
 
+function getAccountBalance(accountType){
+	const usersData = auth.getCurrentUserData();
+	return usersData[accountType];
+}
+
 module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
 module.exports.getBills = getBills;
+module.exports.getAccountBalance = getAccountBalance;
