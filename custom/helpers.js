@@ -1,12 +1,6 @@
 const user_data = require('../userdata.json'); // static user data
-
-function getUserByName(name) {
-  return user_data.filter(
-      function(user_data){
-          return user_data.Users.name == name;
-      }
-  );
-}
+const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
+const auth = require('../custom/auth'); // pseudo authentication and authorization
 
 // returns bill object if bill exists
 // returns empty object if bill does not exist
@@ -19,8 +13,8 @@ function checkBillExists(billType, bills) {
     return {};
 }
 
-function getBills(name, billType) {
-    let user = getUserByName(name); // get user object
+function getBills(billType) {
+    let user = auth.getCurrentUserData(); // get user object
     let bills = user.bills; // get list of bill objects
     let balance = user.balance; // get user balance
     let current_bill = checkBillExists(billType, bills); // get current bill
@@ -48,16 +42,27 @@ function getBills(name, billType) {
     return output;
 }
 
-function getTrans(){
-
+function getTrans(num){
+	const usersData = auth.getCurrentUserData();
+	if(num <= 0){
+		num = 5;
+	}
+	output = `Your last ${num} purchases are `;
+	num = Math.min(num,usersData.purchases.length);
+	for(let i =0; i < num;i++){
+		if(i == num-1){
+			output+= `and `;
+		}
+		if(i < usersData.purchases.length){
+			output += `${usersData.purchases[i].type} for $${usersData.purchases[i].amount}, `;
+		}
+	}
+	return output;
 }
 
-function getLargePurchases(min){
+function getLargePurchases(min, numberToDisplay){
 
-	const firstUsersData = user_data.Users[0]; // Data for first user
-
-	const numberToDisplay = 3;
-
+	const firstUsersData = auth.getCurrentUserData();
 
 	let purchases = firstUsersData.purchases;
 	purchases = purchases.sort(function(a,b) {
@@ -70,15 +75,25 @@ function getLargePurchases(min){
 
 	let output = "";
 
-	for (let i = 0; i<purchases.length;i++){
+	output += `Here are your top ${numberToDisplay} most expensive purchases. `;
+
+	for (let i = 0; i < purchases.length;i++){
 		if (i < numberToDisplay && purchases[i].amount >= min){
-			output += `Purchase ${i+1} of ${purchases[i].type} for ${purchases[i].amount} dollars seems large\n`
 
 			// Make sure the 'and' is onal appended if it is not the last clause
-			if(i != purchases.length - 1){
-				output += `,, and `; // Natural pause and space between sentences
+			if(i != numberToDisplay - 1){
+				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount}\n`
+				output += `seems large,, and `; // Natural pause and space between sentences
+			}
+
+			if(i == numberToDisplay - 1){
+				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount} seems really large.\n`
 			}
 		}
+	}
+
+	if(output === ""){
+		return `Sorry, there are no purchases above the price of $${min}`;
 	}
 
 	return output;

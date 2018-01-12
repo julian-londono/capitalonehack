@@ -42,8 +42,12 @@ router.post('/', function(req, res) {
         },
         'actionTransactions': () => {
             // Get recent transactions
-
-            sendResponse('No logic here for actionTransactions...awkward...');
+            let num = req.body.queryResult.parameters["number"];
+            if(!num){
+              num = 5;
+            }
+            let response = helpers.getTrans(num);
+            sendResponse(response);
         },
         'actionBillDates': () => {
             // Get a certain type of bill's due date
@@ -60,17 +64,27 @@ router.post('/', function(req, res) {
 
             let response = "Couldn't firgure that out...maybe ask me something else?"; //Default response if nothing decided
 
-            const lowerAmountBoundary = req.body.queryResult.parameters["unit-currency"].amount;
-            if(lowerAmountBoundary){
-                response = helpers.getLargePurchases(lowerAmountBoundary);
+            let lowerAmountBoundary = req.body.queryResult.parameters["unit-currency"].amount;
+            let numberToDisplay = req.body.queryResult.parameters["numTransactions"];
+
+            if(!lowerAmountBoundary){
+                // If no lower boundary give hardcode it here just for demo purposes
+                lowerAmountBoundary = 50;
             }
+
+            if(!numberToDisplay){
+                // If no lower boundary give hardcode it here just for demo purposes
+                numberToDisplay = 3;
+            }
+
+            response = helpers.getLargePurchases(lowerAmountBoundary, numberToDisplay);
 
             sendResponse(response);
         },
         'actionBillPay': () => {
             // Pay a certain type of specified bill type
             let billType = parameters.billType;
-            response = helpers.getBills(current_user, billType);
+            response = helpers.getBills(billType);
             sendResponse(response);
         },
         'actionSubscription': () => {
