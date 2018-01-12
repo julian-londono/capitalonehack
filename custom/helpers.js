@@ -32,7 +32,7 @@ function getLastBills(num){
 	return output;
 }
 
-function getBills(billType) {
+function payBills(billType) {
     let user = auth.getCurrentUserData(); // get user object
     let bills = user.bills; // get list of bill objects
     let balance = user.balance; // get user balance
@@ -176,7 +176,7 @@ function giveGeneralAdvice(){
 
 module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
-module.exports.getBills = getBills;
+module.exports.payBills = payBills;
 module.exports.getAccountBalance = getAccountBalance;
 module.exports.getSpending = getSpending;
 module.exports.analyzeTransactions = analyzeTransactions;

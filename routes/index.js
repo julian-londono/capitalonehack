@@ -91,6 +91,15 @@ router.post('/', function(req, res) {
               num = 5;
             }
             let response = helpers.getLastBills(num);
+            response += "Would you like to pay those bills?";
+            sendResponse(response);
+        },
+        'actionBillDatesFollowupYes': () => {
+            response = "What bill would you like to pay?"
+            sendResponse(response);
+        },
+        'actionBillDatesFollowupNo': () => {
+            response = "Okay, what else can I help you with?"
             sendResponse(response);
         },
         'actionSpending': () => {
@@ -127,7 +136,7 @@ router.post('/', function(req, res) {
                 billType = utilities.toTitleCase(billType);
             }
 
-            let response = helpers.getBills(billType);
+            let response = helpers.payBills(billType);
             sendResponse(response);
         },
         'actionSubscription': () => {
