@@ -106,7 +106,7 @@ router.post('/', function(req, res) {
         },
         'actionBillPay': () => {
             // Pay a certain type of specified bill type
-            let billType = parameters.billType;
+            let billType = helpers.toTitleCase(parameters.billType);
             response = helpers.getBills(billType);
             sendResponse(response);
         },
