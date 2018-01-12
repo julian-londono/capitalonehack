@@ -85,7 +85,7 @@ router.post('/', function(req, res) {
         'actionPurchases': () => {
             // Get large or worrying purchases
 
-            let response = "Couldn't firgure that out...maybe ask me something else?"; //Default response if nothing decided
+            let response = "Couldn't figure that out...maybe ask me something else?"; //Default response if nothing decided
 
             let lowerAmountBoundary = req.body.queryResult.parameters["unit-currency"].amount;
             let numberToDisplay = req.body.queryResult.parameters["numTransactions"];
