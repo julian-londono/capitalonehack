@@ -859,6 +859,7 @@
     "loans": [{
       "apr": 2.75,
       "amount": 8000,
+      "minPayment": 150,
       "type": "Car Loan"
     }, {
       "apr": 4.9,
