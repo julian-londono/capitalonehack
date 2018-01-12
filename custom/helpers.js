@@ -153,16 +153,19 @@ function getSpending(category){
 	return `You have spent a total of ${sum} on ${category}, with the most expensive individual purchase of $${purchasesInCategory[0].amount} being spent on ${purchasesInCategory[0].type}. `;
 }
 
+// Ben & Richard
 function analyzeTransactions(){
 
     return 'a';
 }
 
+// Ben & Richard
 function analyzeHabits(){
 
     return 'a';
 }
 
+// Julian & Nick
 function giveGeneralAdvice(){
 
     return 'a';
