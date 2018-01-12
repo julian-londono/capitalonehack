@@ -5,6 +5,7 @@ const router = express.Router();
 
 const constants = require('../constants'); // separate module for constants
 const helpers = require('../custom/helpers'); // custom helpers we can use
+const utilities = require('../custom/utilities'); // general utilities
 
 const user_data = require('../userdata.json'); // static user data
 const user_credentials = require('../credentials.json'); // user credentials
@@ -25,9 +26,20 @@ router.post('/', function(req, res) {
             sendResponse('Hey there!'); // Send simple response to user
         },
         'actionAnalysis': () => {
-            // Analysis of money habits
+            // Analysis of user financial behaviours
 
-            sendResponse('No logic here for actionAnalysis...awkward...');
+            const actionType = req.body.queryResult.parameters.entityAnalysis; //Transactions, Habits, and Advice
+            if(actionType === 'Transactions'){
+                response = helpers.analyzeTransactions();
+            } else if (actionType === 'Habits'){
+                response = helpers.analyzeHabits();
+            } else if(actionType === 'Advice'){
+                response = helpers.giveGeneralAdvice();
+            } else{
+                response = "I can't think of much advice right now...try again later?";
+            }
+
+            sendResponse(response);
         },
         'actionAvailable': () => {
             // Get avaliable credit
@@ -112,7 +124,7 @@ router.post('/', function(req, res) {
             // Pay a certain type of specified bill type
             let billType = parameters.billType;
             if (billType != undefined) {
-                billType = helpers.toTitleCase(billType);
+                billType = utilities.toTitleCase(billType);
             }
 
             let response = helpers.getBills(billType);

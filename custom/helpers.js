@@ -1,4 +1,5 @@
 const user_data = require('../userdata.json'); // static user data
+
 const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
 const auth = require('../custom/auth'); // pseudo authentication and authorization
 
@@ -11,11 +12,6 @@ function checkBillExists(billType, bills) {
         }
     }
     return {};
-}
-
-function toTitleCase(str)
-{
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
 
 function getLastBills(num){
@@ -107,8 +103,6 @@ function getLargePurchases(min, numberToDisplay){
 
 	for (let i = 0; i < purchases.length; i++){
 		if (i < numberToDisplay && purchases[i].amount >= min){
-
-			// Make sure the 'and' is onal appended if it is not the last clause
 			if(i != numberToDisplay - 1){
 				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount}`
 				output += `,, and `; // Natural pause and space between sentences
@@ -134,8 +128,54 @@ function getAccountBalance(accountType){
 	return usersData[accountType];
 }
 
+function getSpending(category){
+	const user = auth.getCurrentUserData(); // get user data
+
+	let purchases = firstUsersData.purchases;
+	let purchasesInCategory = [{}];
+
+	let sum = 0;
+	for (let i = 0; i < purchases.length; i++){
+		if (purchases[i].category === category){
+			purchasesInCategory.push(purchases[i]);	// add this purchase json object into the array
+			sum += purchases[i].amount;
+		}
+	}
+
+	if (purchasesInCategory.length === 0){
+		return 'You have spent $0 on ${category}';
+	}
+
+	purchasesInCategory = purchasesInCategory.sort(function(a,b) {
+		return parseFloat(b.amount) - parseFloat(a.amount);
+	});
+
+	return `You have spent a total of ${sum} on ${category}, with the most expensive individual purchase of $${purchasesInCategory[0].amount} being spent on ${purchasesInCategory[0].type}. `;
+}
+
+function analyzeTransactions(){
+    const user = auth.getCurrentUserData(); // get current user data
+
+    return 'a';
+}
+
+function analyzeHabits(){
+    const user = auth.getCurrentUserData(); // get current user data
+
+    return 'a';
+}
+
+function giveGeneralAdvice(){
+    const user = auth.getCurrentUserData(); // get current user data
+    
+    return 'a';
+}
+
 module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
 module.exports.getBills = getBills;
 module.exports.getAccountBalance = getAccountBalance;
-module.exports.toTitleCase = toTitleCase;
+module.exports.getSpending = getSpending;
+module.exports.analyzeTransactions = analyzeTransactions;
+module.exports.analyzeHabits = analyzeHabits;
+module.exports.giveGeneralAdvice = giveGeneralAdvice;
