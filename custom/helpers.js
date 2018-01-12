@@ -14,7 +14,7 @@ function getTrans(num){
 			output+= `and `;
 		}
 		if(i < usersData.purchases.length){
-			output += `${usersData.purchases[i].type} for $${purchases[i].amount}, `;
+			output += `${usersData.purchases[i].type} for $${usersData.purchases[i].amount}, `;
 		}
 	}
 	return output;
