@@ -3,7 +3,7 @@ const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
 const auth = require('../custom/auth'); // pseudo authentication and authorization
 
 function getTrans(num){
-	const firstUsersData = auth.getCurrentUserData();
+	const usersData = auth.getCurrentUserData();
 	if(num <= 0){
 		num = 5;
 	}
