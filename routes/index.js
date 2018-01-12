@@ -74,8 +74,12 @@ router.post('/', function(req, res) {
         },
         'actionBillDates': () => {
             // Get a certain type of bill's due date
-
-            sendResponse('No logic here for actionBillDates...awkward...');
+            let num = req.body.queryResult.parameters["number"];
+            if(!num){
+              num = 5;
+            }
+            let response = helpers.getLastBills(num);
+            sendResponse(response);
         },
         'actionSpending': () => {
             // Get amount spent on certain types of categories
