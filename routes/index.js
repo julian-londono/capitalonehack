@@ -36,6 +36,25 @@ router.post('/', function(req, res) {
         'actionBalance': () => {
             // Get amount in savings or checking account
 
+            let accountType = req.body.queryResult.parameters.entityBalance[0];
+
+            if(accountType){
+                if(accountType === 'savings account' ||
+                   accountType === 'savings balance'){
+                    // User is asking for savings
+
+                } else if(accountType === 'checkings account' ||
+                          accountType === 'checkings' ||
+                          accountType === 'checkings balance'){
+                    // User is asking for checking
+
+                } else{
+                    // Other
+                }
+            } else {
+                
+            }
+
             sendResponse('No logic here for actionBalance...awkward...');
         },
         'actionTransactions': () => {
