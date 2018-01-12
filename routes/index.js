@@ -106,8 +106,12 @@ router.post('/', function(req, res) {
         },
         'actionBillPay': () => {
             // Pay a certain type of specified bill type
-            let billType = helpers.toTitleCase(parameters.billType);
-            response = helpers.getBills(billType);
+            let billType = parameters.billType;
+            if (billType != undefined) {
+                billType = helpers.toTitleCase(billType);
+            }
+
+            let response = helpers.getBills(billType);
             sendResponse(response);
         },
         'actionSubscription': () => {
