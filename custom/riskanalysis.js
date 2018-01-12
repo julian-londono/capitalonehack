@@ -1,6 +1,6 @@
 const user_data = require('../userdata.json'); // static user data
 
-function getSuspiciousPurchases(){
+function getSuspiciousPurchases(numberToDisplay){
 	const firstUsersData = user_data.Users[0]; // Data for first user
 
 	let purchases = firstUsersData.purchases;
@@ -12,8 +12,6 @@ function getSuspiciousPurchases(){
 		return "There are no purchases logged to this account."	;
 	}
 
-	let output = "";
-
 	// Attempts to find standard deviation
 	let totalAmount = 0;
 	for (let i = 0; i < purchases.length;i++){
@@ -22,15 +20,17 @@ function getSuspiciousPurchases(){
 
 	let averagePrice = totalAmount/purchases.length;
 
-	totalAmount = 0;		// resets totalAmount so it can be recycled for another summation
+	totalAmount = 0; // resets totalAmount so it can be recycled for another summation
 	for (let i = 0; i < purchases.length;i++){
-		totalAmount += Math.pow(purchases[i].amount - stdev,2);
+		totalAmount += Math.pow(purchases[i].amount - averagePrice, 2);
 	}
 	totalAmount /= purchases.length;
-	stdev = Math.sqrt(totalAmount);			// Final stdev value
+	let stdev = Math.sqrt(totalAmount); // Final stdev value
 
-	let min = (1.6*stdev) + averagePrice; 
+	let min = (1.6 * stdev) + averagePrice;
 
+	let suspiciousPurchases = "";
+	let output = "";
 	let foundSus = false;
 	for (let i = 0; i < purchases.length;i++){
 		if (purchases[i].amount >= min){
@@ -38,19 +38,18 @@ function getSuspiciousPurchases(){
 				output += "I found one or more suspicious purchases. "
 				foundSus = true;
 			}
-			
+
 			if(i != numberToDisplay - 1){
-				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount}\n`
-				output += `seems abnormally large,, and `; // Natural pause and space between sentences
+				suspiciousPurchases += `a ${purchases[i].type} purchase for $${purchases[i].amount},\n`
 			}
 
 			if(i == numberToDisplay - 1){
-				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount} seems suspicious.\n`
+				suspiciousPurchases += ` and a ${purchases[i].type} purchase for $${purchases[i].amount}.\n`
 			}
 		}
 	}
 
-
+	output = `You have ${suspiciousPurchases}. These all seem abnormal to me. Would you like me to analyze further?`
 
 	if(output === ""){
 		return `I found no suspicious transactions in your account!`;
