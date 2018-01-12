@@ -135,7 +135,7 @@ function getSpending(category){
 	let purchasesInCategory = [{}];
 
 	let sum = 0;
-	for (int i = 0; i < purchases.length; i++){
+	for (let i = 0; i < purchases.length; i++){
 		if (purchases[i].category === category){
 			purchasesInCategory.push(purchases[i]);	// add this purchase json object into the array
 			sum += purchases[i].amount;
@@ -155,19 +155,20 @@ function getSpending(category){
 
 // Ben & Richard
 function analyzeTransactions(){
+		const user = auth.getCurrentUserData(); // get current user data
 
     return 'a';
 }
 
 // Ben & Richard
 function analyzeHabits(){
-
+		const user = auth.getCurrentUserData(); // get current user data
     return 'a';
 }
 
 // Julian & Nick
 function giveGeneralAdvice(){
-
+		const user = auth.getCurrentUserData(); // get current user data
     return 'a';
 }
 
