@@ -33,7 +33,7 @@ router.post('/', function(req, res) {
                 response = helpers.analyzeTransactions();
                 response += " Would you like advice on how to improve your purchase distribution?";
             } else if (actionType === 'Habits'){
-                response = helpers.analyzeHabits();
+                response = helpers.analyzeHabits("original");
             } else if(actionType === 'Advice'){
                 response = helpers.giveGeneralAdvice();
             } else if(actionType === 'Loans'){
@@ -43,6 +43,9 @@ router.post('/', function(req, res) {
             }
 
             sendResponse(response);
+        },
+        'activityAnalysisHabitsFollowUp': () => {
+            sendResponse(helpers.analyzeHabits("first-followup"));
         },
         'actionAvailable': () => {
             // Get avaliable credit

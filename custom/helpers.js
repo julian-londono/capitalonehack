@@ -199,7 +199,7 @@ function analyzeTransactions(){
     return output;
 }
 
-function analyzeHabits(){
+function analyzeHabits(caller){
     const userData = auth.getCurrentUserData(); // get current user data
 
     // Setup and get what we need to make calculations
@@ -212,9 +212,10 @@ function analyzeHabits(){
 		return "There are no purchases logged to this account.";
 	}
 
-    let output = "In regards to your spending habits let's first look at where your money is going. So let me break this down by category: ";
+    let output;
 
     let categories = [];
+    let totalSpend = 0;
 
     for (let i = 0; i < purchases.length; i++){
         const indexOfCategory = util.getCategoryIndex(purchases[i].category, categories);
@@ -230,22 +231,33 @@ function analyzeHabits(){
                 totalSpend: purchases[i].amount
             })
         }
+        totalSpend += purchases[i].amount;
 	}
 
-    let categoriesString = "";
-    for (let i = 0; i < categories.length; i++){
-        if(i != categories.length - 1){
-            categoriesString += `$${categories[i].totalSpend} on ${categories[i].category}, `;
-            categoriesString += `,, and `;
-        }
+    if(caller === "original"){
+        output = "In regards to your spending habits let's first look at where your money is going. So let me break this down by category: ";
+        let categoriesString = "";
+        for (let i = 0; i < categories.length; i++){
+            if(i != categories.length - 1){
+                categoriesString += `$${categories[i].totalSpend} on ${categories[i].category}, `;
+            }
 
-        if(i == categories.length - 1){
-            categoriesString += `$${categories[i].totalSpend} on ${categories[i].category}.`;
-        }
+            if(i == categories.length - 1){
+                categoriesString += `and $${categories[i].totalSpend} on ${categories[i].category}.`;
+            }
 
-	}
+    	}
 
-    output += `You've spent ${categoriesString}. I see room for improvement. Would you like more insight?`
+        output += `You've spent ${categoriesString}. I see room for improvement. Would you like more insight?`;
+    } else if(caller === "first-followup"){
+        const topCategoryIndex = util.getTopSpendingCategoryIndex(categories);
+        const totalSpendAfterHalfTopCategory = totalSpend - (categories[topCategoryIndex].totalSpend * .5);
+        const percentChange = Math.abs(Math.round(((totalSpendAfterHalfTopCategory - totalSpend) / totalSpend) * 100));
+        output = `Cool, so first I see that your top category of spending was ${categories[topCategoryIndex].category} where you spent
+                  $${categories[topCategoryIndex].totalSpend} total. If you cut spending there by 50% your overall spending would go down
+                  from $${totalSpend} to $${totalSpendAfterHalfTopCategory}, a decent cut of ${percentChange}% which I think will help a little
+                  hopefully.`
+    }
 
 
     return output;
