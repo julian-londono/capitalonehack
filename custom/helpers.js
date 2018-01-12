@@ -1,13 +1,24 @@
 const user_data = require('../userdata.json'); // static user data
 const riskanalysis = require('../custom/riskanalysis'); // static user data
 
-function getTrans(){
+function currentUser(){
+	const credentials = require("../credentials.json");
+	for(int i = 0; i < user_data.Users.length; i++){
+		if(user_data.Users[i].name == credentials.name)
+			return user_data.Users[i];
+		}
+	}
+	console.log("Error");
+	return user_data.Users[0];
+}
 
+function getTrans(num){
+	const firstUsersData = currentUser();
 }
 
 function getLargePurchases(min){
 
-	const firstUsersData = user_data.Users[0]; // Data for first user
+	const firstUsersData = currentUser(); // Data for first user
 
 	const numberToDisplay = 3;
 
