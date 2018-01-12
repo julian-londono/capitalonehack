@@ -12,6 +12,9 @@ itemList = {}
 #     json.dump(itemList, outfile)
 # for x in range(100):
 #     print(random.choice(itemList.keys())+ ": $" + str(random.randint(1,101)))
+count = 0
 for key in data.keys():
     if(data.get(key) == "Service"):
         print (key)
+        count += 1
+print(count)
