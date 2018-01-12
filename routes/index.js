@@ -35,6 +35,8 @@ router.post('/', function(req, res) {
                 response = helpers.analyzeHabits();
             } else if(actionType === 'Advice'){
                 response = helpers.giveGeneralAdvice();
+            } else if(actionType === 'Loans'){
+                response = helpers.giveLoanAdvice();
             } else{
                 response = "I can't think of much advice right now...try again later?";
             }
