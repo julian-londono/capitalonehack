@@ -7,6 +7,8 @@ const constants = require('../constants'); // separate module for constants
 const helpers = require('../custom/helpers'); // custom helpers we can use
 
 const user_data = require('../userdata.json'); // static user data
+const user_credentials = require('../credentials.json'); // user credentials
+const current_user = user_credentials.name;
 
 // POST '/'
 router.post('/', function(req, res) {
@@ -104,8 +106,9 @@ router.post('/', function(req, res) {
         },
         'actionBillPay': () => {
             // Pay a certain type of specified bill type
-
-            sendResponse('No logic here for actionBillPay...awkward...');
+            let billType = parameters.billType;
+            response = helpers.getBills(billType);
+            sendResponse(response);
         },
         'actionSubscription': () => {
             // Get any subscriptions a user has
