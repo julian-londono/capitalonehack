@@ -96,7 +96,11 @@ router.post('/', function(req, res) {
         'actionSpending': () => {
             // Get amount spent on certain types of categories
 
-            sendResponse('No logic here for actionSpending...awkward...');
+            let category = req.body.queryResult.parameters.category;
+            category = category.charAt(0).toUpperCase() + category.substring(1, category.length);
+            response = helpers.getSpending(category);
+
+            sendResponse(response);
         },
         'actionPurchases': () => {
             // Get large or worrying purchases

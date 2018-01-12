@@ -129,10 +129,10 @@ function getAccountBalance(accountType){
 }
 
 function getSpending(category){
-	const user = auth.getCurrentUserData(); // get user data
+	const firstUserData = auth.getCurrentUserData(); // get user data
 
-	let purchases = firstUsersData.purchases;
-	let purchasesInCategory = [{}];
+	let purchases = firstUserData.purchases;
+	let purchasesInCategory = [];
 
 	let sum = 0;
 	for (let i = 0; i < purchases.length; i++){
@@ -150,14 +150,54 @@ function getSpending(category){
 		return parseFloat(b.amount) - parseFloat(a.amount);
 	});
 
-	return `You have spent a total of ${sum} on ${category}, with the most expensive individual purchase of $${purchasesInCategory[0].amount} being spent on ${purchasesInCategory[0].type}. `;
+    console.dir(purchasesInCategory)
+	return `You have spent a total of $${sum} on ${category}, with the most expensive individual purchase of $${purchasesInCategory[0].amount} being spent on ${purchasesInCategory[0].type}. `;
 }
 
 // Ben & Richard
 function analyzeTransactions(){
-    const user = auth.getCurrentUserData(); // get current user data
+    const userData = auth.getCurrentUserData(); // get current user data
 
-    return 'a';
+    // Setup and get what we need to make calculations
+    let purchases = userData.purchases;
+	purchases = purchases.sort(function(a,b) {
+		return parseFloat(b.amount) - parseFloat(a.amount);
+	});
+
+	if (purchases.length === 0){
+		return "There are no purchases logged to this account.";
+	}
+
+	let output = "Ok, sure, let's talk about your transaction patterns. So here is a breakdown of your purchasing habits: ";
+
+    //Breakdown the purchases of a user into price ranges
+    let cheapPurchaseCount = 0; // $0-$19
+    let midRangePurchaseCount = 0; // $20-$49
+    let expensivePurchaseCount = 0; // $50-
+
+    for (let i = 0; i < purchases.length; i++){
+		if (purchases[i].amount >= 0 && purchases[i].amount < 20){
+            // Cheap Purchase
+            cheapPurchaseCount++;
+		} else if(purchases[i].amount >= 20 && purchases[i].amount < 50){
+            // Middle Range Purchase
+            midRangePurchaseCount++;
+        } else{
+            // Expensive Purchase
+            expensivePurchaseCount++;
+        }
+	}
+
+    const totalPurchases = cheapPurchaseCount + midRangePurchaseCount + expensivePurchaseCount;
+    const cheapPurchasePercent = Math.round((cheapPurchaseCount / totalPurchases) * 100);
+    const midRangePercent = Math.round((midRangePurchaseCount / totalPurchases) * 100);
+    const expensivePercent = Math.round((expensivePurchaseCount / totalPurchases) * 100);
+
+    output += `Of ${totalPurchases} purchases, ${cheapPurchasePercent}% are what I'd call cheap, that is 0 to $19.
+               ${midRangePercent}% of your purchases range from $20 to $49, and finally ${expensivePercent}% of your
+               purchases are pricier going past the $50 mark. Would you like advice on how to improve your purchase distribution?`
+
+    return output;
 }
 
 // Ben & Richard
@@ -170,7 +210,7 @@ function analyzeHabits(){
 // Julian & Nick
 function giveGeneralAdvice(){
     const user = auth.getCurrentUserData(); // get current user data
-    
+
     return 'a';
 }
 
