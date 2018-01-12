@@ -13,6 +13,11 @@ function checkBillExists(billType, bills) {
     return {};
 }
 
+function toTitleCase(str)
+{
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
 function getBills(billType) {
     let user = auth.getCurrentUserData(); // get user object
     let bills = user.bills; // get list of bill objects
@@ -29,7 +34,7 @@ function getBills(billType) {
         } else {
             // if there is enough money to pay off the bill
             if (current_bill.amount < balance) {
-                output += `Okay, I have paid off your ${billType} bill. Your balance has changed from ${balance} to`;
+                output += `Okay, I have paid off your ${billType} bill. Your balance has changed from ${balance} to `;
                 balance -= current_bill.amount;
                 output += `${balance}`;
             } else {
@@ -110,3 +115,4 @@ module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
 module.exports.getBills = getBills;
 module.exports.getAccountBalance = getAccountBalance;
+module.exports.toTitleCase = toTitleCase;
