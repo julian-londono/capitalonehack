@@ -120,7 +120,7 @@ router.post('/', function(req, res) {
             // Pay a certain type of specified bill type
             let billType = parameters.billType;
             if (billType != undefined) {
-                billType = helpers.toTitleCase(billType);
+                billType = utilities.toTitleCase(billType);
             }
 
             let response = helpers.getBills(billType);
