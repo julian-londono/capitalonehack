@@ -14,6 +14,24 @@ function checkBillExists(billType, bills) {
     return {};
 }
 
+function getLastBills(num){
+	const usersData = auth.getCurrentUserData();
+	if(num <= 0){
+		num = 5;
+	}
+	output = `Your next ${num} bills are `;
+	num = Math.min(num,usersData.bills.length);
+	for(let i =0; i < num;i++){
+		if(i == num-1){
+			output+= `and `;
+		}
+		if(i < usersData.bills.length){
+			output += `${usersData.bills[i].type} for $${usersData.bills[i].amount}, `;
+		}
+	}
+	return output;
+}
+
 function getBills(billType) {
     let user = auth.getCurrentUserData(); // get user object
     let bills = user.bills; // get list of bill objects
@@ -24,9 +42,14 @@ function getBills(billType) {
 
     // if the account has bills associated with it
     if (bills.length) {
-        // if there are no parameters provided / current_bill is empty
-        if (Object.keys(current_bill).length === 0) {
+        // if there is no bill w/ that name
+        console.log(typeof billType);
+        if (billType == "") {
             output += 'Would you like to pay off all your bills?';
+        }
+        // if there are no parameters provided
+        else if (Object.keys(current_bill).length === 0) {
+            output += `I cannot find a bill for ${billType}.`;
         } else {
             // if there is enough money to pay off the bill
             if (current_bill.amount < balance) {
