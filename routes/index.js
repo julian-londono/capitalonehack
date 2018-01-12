@@ -66,9 +66,9 @@ router.post('/', function(req, res) {
                 lowerAmountBoundary = 50;
             }
 
-            if(!numTransactions){
+            if(!numberToDisplay){
                 // If no lower boundary give hardcode it here just for demo purposes
-                numTransactions = 3;
+                numberToDisplay = 3;
             }
 
             response = helpers.getLargePurchases(lowerAmountBoundary, numberToDisplay);

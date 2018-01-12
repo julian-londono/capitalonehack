@@ -1,24 +1,14 @@
 const user_data = require('../userdata.json'); // static user data
 const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
-
-function currentUser(){
-	const credentials = require("../credentials.json");
-	for(int i = 0; i < user_data.Users.length; i++){
-		if(user_data.Users[i].name == credentials.name)
-			return user_data.Users[i];
-		}
-	}
-	console.log("Error");
-	return user_data.Users[0];
-}
+const auth = require('../custom/auth'); // pseudo authentication and authorization
 
 function getTrans(num){
-	const firstUsersData = currentUser();
+	const firstUsersData = auth.getCurrentUserData();
 }
 
 function getLargePurchases(min, numberToDisplay){
 
-	const firstUsersData = currentUser(); // Data for first user
+	const firstUsersData = auth.getCurrentUserData();
 
 	let purchases = firstUsersData.purchases;
 	purchases = purchases.sort(function(a,b) {
