@@ -1,16 +1,13 @@
 const user_data = require('../userdata.json'); // static user data
-const riskanalysis = require('../custom/riskanalysis'); // static user data
+const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
 
 function getTrans(){
 
 }
 
-function getLargePurchases(min){
+function getLargePurchases(min, numberToDisplay){
 
 	const firstUsersData = user_data.Users[0]; // Data for first user
-
-	const numberToDisplay = 3;
-
 
 	let purchases = firstUsersData.purchases;
 	purchases = purchases.sort(function(a,b) {
@@ -22,6 +19,8 @@ function getLargePurchases(min){
 	}
 
 	let output = "";
+
+	output += `Here are your top ${numberToDisplay} most expensive purchases. `;
 
 	for (let i = 0; i < purchases.length;i++){
 		if (i < numberToDisplay && purchases[i].amount >= min){
