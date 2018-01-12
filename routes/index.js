@@ -24,7 +24,7 @@ router.post('/', function(req, res) {
         },
         'actionAnalysis': () => {
             // Analysis of money habits
-            
+
             sendResponse('No logic here for actionAnalysis...awkward...');
         },
         'actionAvailable': () => {
@@ -56,7 +56,14 @@ router.post('/', function(req, res) {
         'actionPurchases': () => {
             // Get large or worrying purchases
 
-            sendResponse('No logic here for actionPurchaces...awkward...');
+            let response = "Couldn't firgure that out...maybe ask me something else?"; //Default response if nothing decided
+
+            const lowerAmountBoundary = req.body.queryResult.parameters["unit-currency"].amount;
+            if(lowerAmountBoundary){
+                response = helpers.getLargePurchases(lowerAmountBoundary);
+            }
+
+            sendResponse(response);
         },
         'actionBillPay': () => {
             // Pay a certain type of specified bill type

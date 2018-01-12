@@ -4,17 +4,14 @@ function getTrans(){
 
 }
 
-function getLargePurchases(){
-
-	const min = Number.MAX_VALUE;
+function getLargePurchases(min){
 
 	const firstUsersData = user_data.Users[0]; // Data for first user
 
-	min = parameters.unit - currency;
-	var numberToDisplay = 3;
+	const numberToDisplay = 3;
 
 
-	var purchases = userinfo.purchases;
+	let purchases = firstUsersData.purchases;
 	purchases = purchases.sort(function(a,b) {
 		return parseFloat(b.amount) - parseFloat(a.amount);
 	});
@@ -23,13 +20,21 @@ function getLargePurchases(){
 		return "There are no purchases logged to this account.";
 	}
 
-	var output = "";
+	let output = "";
 
-	for (var i = 0; i<purchases.length;i++){
+	for (let i = 0; i<purchases.length;i++){
 		if (i < numberToDisplay && purchases[i].amount >= min){
-			output += "Purchase " + (i+1) +" of " + purchases[i].type + " for " + purchases[i].amount + " dollars.";
+			output += `Purchase ${i+1} of ${purchases[i].type} for ${purchases[i].amount} dollars seems large\n`
+
+			// Make sure the 'and' is onal appended if it is not the last clause
+			if(i != purchases.length - 1){
+				output += `,, and `; // Natural pause and space between sentences
+			}
 		}
 	}
+
+	return output;
 }
 
 module.exports.getTrans = getTrans;
+module.exports.getLargePurchases = getLargePurchases;

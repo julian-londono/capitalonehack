@@ -7,8 +7,13 @@
           "purchases": [
             {
                 "amount": 10000000,
-                "category": "",
-                "type": ""
+                "category": "properties",
+                "type": "mansion"
+            },
+            {
+                "amount": 100,
+                "category": "furniture",
+                "type": "couch"
             }
           ],
           "loans": [
@@ -58,8 +63,8 @@
           "purchases": [
             {
                 "amount": 10000000,
-                "category": "",
-                "type": ""
+                "category": "recreation",
+                "type": "swimming pool"
             }
           ],
           "loans": [
@@ -109,8 +114,8 @@
           "purchases": [
             {
                 "amount": 10000000,
-                "category": "",
-                "type": ""
+                "category": "world domination",
+                "type": "airplane"
             }
           ],
           "loans": [
