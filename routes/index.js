@@ -40,7 +40,7 @@ router.post('/', function(req, res) {
         },
         'actionTransactions': () => {
             // Get recent transactions
-
+            let num = req.body.queryResult.parameters["number"]
             sendResponse('No logic here for actionTransactions...awkward...');
         },
         'actionBillDates': () => {
