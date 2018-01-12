@@ -37,18 +37,18 @@ router.post('/', function(req, res) {
             // Get amount in savings or checking account
 
             let response = 'Trouble fetching account balance data.'
-            let accountType = req.body.queryResult.parameters.entityBalance[0];
+            let accountType = req.body.queryResult.parameters.entityBalance;
 
             if(accountType){
-                if(accountType === 'savings account' ||
-                   accountType === 'savings balance'){
+                if(accountType === 'Savings'){
                     // User is asking for savings
-                    response = `Your savings account has $${helpers.getAccountBalance('savings')}`;
-                } else if(accountType === 'checkings account' ||
-                          accountType === 'checkings' ||
-                          accountType === 'checkings balance'){
+                    response = `Your savings account has $${helpers.getAccountBalance('savings')}.`;
+                } else if(accountType === 'Checking'){
                     // User is asking for checking
-                    response = `Your checking account has $${helpers.getAccountBalance('balance')}`;
+                    response = `Your checking account has $${helpers.getAccountBalance('balance')}.`;
+                } else if(accountType === 'Credit'){
+                    // User is asking for checking
+                    response = `You have $${helpers.getAccountBalance('remainingCredit')} of remaining credit.`;
                 } else{
                     // Other
 
