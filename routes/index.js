@@ -58,10 +58,13 @@ router.post('/', function(req, res) {
 
             let response = "Couldn't firgure that out...maybe ask me something else?"; //Default response if nothing decided
 
-            const lowerAmountBoundary = req.body.queryResult.parameters["unit-currency"].amount;
-            if(lowerAmountBoundary){
-                response = helpers.getLargePurchases(lowerAmountBoundary);
+            let lowerAmountBoundary = req.body.queryResult.parameters["unit-currency"].amount;
+            if(!lowerAmountBoundary){
+                // If no lower boundary give hardcode it here just for demo purposes
+                lowerAmountBoundary = 50;
             }
+
+            response = helpers.getLargePurchases(lowerAmountBoundary);
 
             sendResponse(response);
         },
