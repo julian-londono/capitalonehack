@@ -4,6 +4,20 @@ const auth = require('../custom/auth'); // pseudo authentication and authorizati
 
 function getTrans(num){
 	const firstUsersData = auth.getCurrentUserData();
+	if(num <= 0){
+		num = 5;
+	}
+	output = `Your last ${num} purchases are `;
+	num = Math.min(num,usersData.purchases.length);
+	for(let i =0; i < num;i++){
+		if(i == num-1){
+			output+= `and `;
+		}
+		if(i < usersData.purchases.length){
+			output += `${usersData.purchases[i].type} for $${purchases[i].amount}, `;
+		}
+	}
+	return output;
 }
 
 function getLargePurchases(min, numberToDisplay){

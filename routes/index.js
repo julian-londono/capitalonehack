@@ -59,8 +59,12 @@ router.post('/', function(req, res) {
         },
         'actionTransactions': () => {
             // Get recent transactions
-
-            sendResponse('No logic here for actionTransactions...awkward...');
+            let num = req.body.queryResult.parameters["number"];
+            if(!num){
+              num = 5;
+            }
+            let response = helpers.getTrans(num);
+            sendResponse(response);
         },
         'actionBillDates': () => {
             // Get a certain type of bill's due date
