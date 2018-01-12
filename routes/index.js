@@ -85,7 +85,7 @@ router.post('/', function(req, res) {
         'actionPurchases': () => {
             // Get large or worrying purchases
 
-            let response = "Couldn't firgure that out...maybe ask me something else?"; //Default response if nothing decided
+            let response = "Couldn't figure that out...maybe ask me something else?"; //Default response if nothing decided
 
             let lowerAmountBoundary = req.body.queryResult.parameters["unit-currency"].amount;
             let numberToDisplay = req.body.queryResult.parameters["numTransactions"];
@@ -106,8 +106,12 @@ router.post('/', function(req, res) {
         },
         'actionBillPay': () => {
             // Pay a certain type of specified bill type
-            let billType = helpers.toTitleCase(parameters.billType);
-            response = helpers.getBills(billType);
+            let billType = parameters.billType;
+            if (billType != undefined) {
+                billType = helpers.toTitleCase(billType);
+            }
+
+            let response = helpers.getBills(billType);
             sendResponse(response);
         },
         'actionSubscription': () => {
