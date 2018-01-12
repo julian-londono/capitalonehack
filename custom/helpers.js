@@ -174,6 +174,10 @@ function giveGeneralAdvice(){
     return 'a';
 }
 
+function giveLoanAdvice(){
+  
+}
+
 module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
 module.exports.getBills = getBills;
