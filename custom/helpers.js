@@ -166,8 +166,8 @@ function analyzeHabits(){
 }
 
 function giveGeneralAdvice(){
-    const user = auth.getCurrentUserData(); // get currentuser data
-
+    const user = auth.getCurrentUserData(); // get current user data
+    
     return 'a';
 }
 

@@ -1,405 +1,405 @@
 {
   "Users": [{
     "purchases": [{
-      "category": "Service",
-      "amount": 27,
-      "type": "Printing and Publishing"
-    }, {
-      "category": "Food and Drink",
-      "amount": 8,
-      "type": "Mexican"
-    }, {
-      "category": "Travel",
-      "amount": 77,
-      "type": "Bus Stations"
-    }, {
-      "category": "Service",
-      "amount": 101,
-      "type": "Creative Services"
-    }, {
-      "category": "Transfer",
-      "amount": 92,
-      "type": "Billpay"
-    }, {
       "category": "Recreation",
-      "amount": 49,
-      "type": "Zoo"
-    }, {
-      "category": "Recreation",
-      "amount": 39,
-      "type": "Hunting and Fishing"
-    }, {
-      "category": "Food and Drink",
-      "amount": 27,
-      "type": "Hotel Lounge"
-    }, {
-      "category": "Service",
-      "amount": 29,
-      "type": "Commercial Real Estate"
-    }, {
-      "category": "Food and Drink",
       "amount": 38,
-      "type": "Karaoke"
+      "type": "Beaches"
     }, {
-      "category": "Food and Drink",
-      "amount": 21,
-      "type": "Portuguese"
+      "category": "Recreation",
+      "amount": 74,
+      "type": "Cycling"
     }, {
       "category": "Travel",
-      "amount": 5,
+      "amount": 84,
       "type": "Gas Stations"
     }, {
-      "category": "Shops",
-      "amount": 38,
-      "type": "Flea Markets"
+      "category": "Food and Drinks",
+      "amount": 98,
+      "type": "Middle Eastern"
     }, {
       "category": "Shops",
-      "amount": 5,
-      "type": "Health Food"
-    }, {
-      "category": "Food and Drink",
-      "amount": 81,
-      "type": "Ice Cream"
-    }, {
-      "category": "Community",
-      "amount": 41,
-      "type": "Police Stations"
-    }, {
-      "category": "Food and Drink",
-      "amount": 93,
-      "type": "Sports Bar"
-    }, {
-      "category": "Recreation",
-      "amount": 54,
-      "type": "Water Sports"
-    }, {
-      "category": "Community",
-      "amount": 53,
-      "type": "Fraternities and Sororities"
-    }, {
-      "category": "Service",
-      "amount": 34,
-      "type": "Printing and Publishing"
-    }, {
-      "category": "Travel",
-      "amount": 72,
-      "type": "Car Service"
-    }, {
-      "category": "Food and Drink",
-      "amount": 81,
-      "type": "Scandinavian"
-    }, {
-      "category": "Healthcare",
-      "amount": 84,
-      "type": "Obstetricians and Gynecologists"
-    }, {
-      "category": "Service",
-      "amount": 57,
-      "type": "Agriculture and Forestry"
-    }, {
-      "category": "Food and Drink",
-      "amount": 66,
-      "type": "Karaoke"
-    }, {
-      "category": "Service",
-      "amount": 81,
-      "type": "Rubber Products"
-    }, {
-      "category": "Service",
       "amount": 96,
-      "type": "Veterinarians"
-    }, {
-      "category": "Service",
-      "amount": 6,
-      "type": "Shipping and Freight"
-    }, {
-      "category": "Travel",
-      "amount": 53,
-      "type": "Charter Buses"
-    }, {
-      "category": "Shops",
-      "amount": 50,
-      "type": "Classic and Antique Car"
-    }, {
-      "category": "Service",
-      "amount": 26,
-      "type": "Funeral Services"
-    }, {
-      "category": "Healthcare",
-      "amount": 26,
-      "type": "Respiratory"
-    }, {
-      "category": "Service",
-      "amount": 86,
-      "type": "Check Cashing"
+      "type": "Boat Dealers"
     }, {
       "category": "Recreation",
-      "amount": 55,
-      "type": "Circuses and Carnivals"
-    }, {
-      "category": "Recreation",
-      "amount": 60,
-      "type": "Soccer"
-    }, {
-      "category": "Food and Drink",
-      "amount": 65,
-      "type": "Juice Bar"
+      "amount": 93,
+      "type": "Swimming"
     }, {
       "category": "Recreation",
       "amount": 69,
+      "type": "Party Centers"
+    }, {
+      "category": "Shops",
+      "amount": 39,
+      "type": "Motorcycles, Mopeds and Scooters"
+    }, {
+      "category": "Travel",
+      "amount": 55,
+      "type": "Transportation Centers"
+    }, {
+      "category": "Shops",
+      "amount": 36,
+      "type": "Computers and Electronics"
+    }, {
+      "category": "Shops",
+      "amount": 27,
+      "type": "Men's Store"
+    }, {
+      "category": "Shops",
+      "amount": 1,
+      "type": "Industrial Supplies"
+    }, {
+      "category": "Travel",
+      "amount": 56,
+      "type": "Bus Stations"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 45,
+      "type": "Strip Club"
+    }, {
+      "category": "Travel",
+      "amount": 72,
+      "type": "Gas Stations"
+    }, {
+      "category": "Travel",
+      "amount": 96,
+      "type": "Tolls and Fees"
+    }, {
+      "category": "Recreation",
+      "amount": 37,
+      "type": "Rock Climbing"
+    }, {
+      "category": "Shops",
+      "amount": 39,
+      "type": "Florists"
+    }, {
+      "category": "Recreation",
+      "amount": 27,
+      "type": "Athletic Fields"
+    }, {
+      "category": "Travel",
+      "amount": 66,
+      "type": "Cruises"
+    }, {
+      "category": "Travel",
+      "amount": 46,
+      "type": "Gas Stations"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 12,
+      "type": "Bakery"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 42,
+      "type": "Cafe"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 24,
+      "type": "Latin American"
+    }, {
+      "category": "Services",
+      "amount": 42,
+      "type": "Auto Oil and Lube"
+    }, {
+      "category": "Travel",
+      "amount": 24,
+      "type": "Gas Stations"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 6,
+      "type": "Breakfast Spot"
+    }, {
+      "category": "Shops",
+      "amount": 54,
+      "type": "Adult"
+    }, {
+      "category": "Community",
+      "amount": 19,
+      "type": "Housing Assistance and Shelters"
+    }, {
+      "category": "Travel",
+      "amount": 55,
+      "type": "Airports"
+    }, {
+      "category": "Travel",
+      "amount": 91,
+      "type": "Limos and Chauffeurs"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 8,
+      "type": "Donuts"
+    }, {
+      "category": "Recreation",
+      "amount": 88,
+      "type": "Casinos and Gaming"
+    }, {
+      "category": "Travel",
+      "amount": 47,
+      "type": "Gas Stations"
+    }, {
+      "category": "Recreation",
+      "amount": 101,
       "type": "Mountains"
     }, {
-      "category": "Food and Drink",
-      "amount": 63,
-      "type": "Burrito"
+      "category": "Travel",
+      "amount": 100,
+      "type": "Car Service"
     }, {
       "category": "Shops",
-      "amount": 101,
-      "type": "Cards and Stationery"
+      "amount": 7,
+      "type": "Salvage Yards"
     }, {
-      "category": "Transfer",
-      "amount": 14,
-      "type": "Benefits"
-    }, {
-      "category": "Service",
-      "amount": 76,
-      "type": "Storage"
-    }, {
-      "category": "Service",
-      "amount": 83,
-      "type": "Insurance"
-    }, {
-      "category": "Service",
-      "amount": 93,
-      "type": "Architects"
+      "category": "Travel",
+      "amount": 16,
+      "type": "Gas Stations"
     }, {
       "category": "Community",
-      "amount": 37,
-      "type": "Computer Training"
+      "amount": 49,
+      "type": "Colleges and Universities"
     }, {
-      "category": "Community",
+      "category": "Food and Drinks",
+      "amount": 40,
+      "type": "Turkish"
+    }, {
+      "category": "Healthcare",
+      "amount": 58,
+      "type": "Ear, Nose and Throat"
+    }, {
+      "category": "Travel",
+      "amount": 34,
+      "type": "Bus Stations"
+    }, {
+      "category": "Recreation",
+      "amount": 56,
+      "type": "Movie Theatres"
+    }, {
+      "category": "Travel",
       "amount": 64,
-      "type": "Education"
+      "type": "Lodging"
     }, {
-      "category": "Food and Drink",
-      "amount": 45,
-      "type": "Night Clubs"
+      "category": "Recreation",
+      "amount": 66,
+      "type": "Basketball"
     }, {
-      "category": "Service",
-      "amount": 89,
-      "type": "Food and Beverage"
+      "category": "Travel",
+      "amount": 92,
+      "type": "Boat"
     }, {
-      "category": "Food and Drink",
-      "amount": 80,
-      "type": "Delis"
+      "category": "Travel",
+      "amount": 85,
+      "type": "Transportation Centers"
     }, {
-      "category": "Food and Drink",
-      "amount": 39,
-      "type": "African"
-    }, {
-      "category": "Service",
-      "amount": 99,
-      "type": "Auto Smog Check"
-    }, {
-      "category": "Food and Drink",
-      "amount": 11,
+      "category": "Food and Drinks",
+      "amount": 95,
       "type": "Restaurants"
     }, {
-      "category": "Service",
-      "amount": 87,
-      "type": "Paper"
+      "category": "Recreation",
+      "amount": 46,
+      "type": "Bowling"
     }, {
-      "category": "Transfer",
-      "amount": 59,
-      "type": "ACH"
+      "category": "Travel",
+      "amount": 90,
+      "type": "Heliports"
     }, {
-      "category": "Service",
-      "amount": 50,
-      "type": "Swimming Pool Maintenance and Services"
+      "category": "Travel",
+      "amount": 43,
+      "type": "Limos and Chauffeurs"
     }, {
-      "category": "Bank Fees",
+      "category": "Food and Drinks",
+      "amount": 14,
+      "type": "Barbecue"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 27,
+      "type": "Sushi"
+    }, {
+      "category": "Recreation",
+      "amount": 69,
+      "type": "Lakes"
+    }, {
+      "category": "Travel",
+      "amount": 88,
+      "type": "Heliports"
+    }, {
+      "category": "Travel",
+      "amount": 66,
+      "type": "Lodges and Vacation Rentals"
+    }, {
+      "category": "Services",
+      "amount": 88,
+      "type": "Skin Care"
+    }, {
+      "category": "Recreation",
       "amount": 57,
-      "type": "Late Payment"
+      "type": "Playgrounds"
     }, {
       "category": "Shops",
-      "amount": 8,
-      "type": "Construction Supplies"
+      "amount": 59,
+      "type": "Beauty Products"
     }, {
-      "category": "Food and Drink",
+      "category": "Travel",
+      "amount": 47,
+      "type": "Ride Share"
+    }, {
+      "category": "Healthcare",
+      "amount": 96,
+      "type": "Podiatrists"
+    }, {
+      "category": "Travel",
+      "amount": 27,
+      "type": "Rail"
+    }, {
+      "category": "Food and Drinks",
       "amount": 31,
-      "type": "Pizza"
+      "type": "Thai"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 79,
+      "type": "Cupcake Shop"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 89,
+      "type": "Spanish"
+    }, {
+      "category": "Travel",
+      "amount": 82,
+      "type": "Car Service"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 95,
+      "type": "Mexican"
+    }, {
+      "category": "Shops",
+      "amount": 52,
+      "type": "Jewelry and Watches"
+    }, {
+      "category": "Travel",
+      "amount": 19,
+      "type": "Public Transportation Services"
+    }, {
+      "category": "Shops",
+      "amount": 48,
+      "type": "Men's Store"
+    }, {
+      "category": "Travel",
+      "amount": 74,
+      "type": "Limos and Chauffeurs"
+    }, {
+      "category": "Shops",
+      "amount": 41,
+      "type": "Specialty"
+    }, {
+      "category": "Travel",
+      "amount": 100,
+      "type": "Cruises"
+    }, {
+      "category": "Travel",
+      "amount": 83,
+      "type": "Car and Truck Rentals"
+    }, {
+      "category": "Travel",
+      "amount": 68,
+      "type": "Hostels"
+    }, {
+      "category": "Travel",
+      "amount": 93,
+      "type": "Hotels and Motels"
+    }, {
+      "category": "Travel",
+      "amount": 25,
+      "type": "Parking"
+    }, {
+      "category": "Community",
+      "amount": 7,
+      "type": "Housing Assistance and Shelters"
+    }, {
+      "category": "Healthcare",
+      "amount": 62,
+      "type": "Hospitals, Clinics and Medical Centers"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 63,
+      "type": "Italian"
+    }, {
+      "category": "Travel",
+      "amount": 93,
+      "type": "Limos and Chauffeurs"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 34,
+      "type": "Fast Food"
+    }, {
+      "category": "Healthcare",
+      "amount": 5,
+      "type": "Anesthesiologists"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 33,
+      "type": "Nightlife"
+    }, {
+      "category": "Services",
+      "amount": 47,
+      "type": "Metal Products"
+    }, {
+      "category": "Travel",
+      "amount": 69,
+      "type": "Bus Stations"
+    }, {
+      "category": "Travel",
+      "amount": 61,
+      "type": "Heliports"
+    }, {
+      "category": "Healthcare",
+      "amount": 20,
+      "type": "Cardiologists"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 68,
+      "type": "Bakery"
+    }, {
+      "category": "Recreation",
+      "amount": 69,
+      "type": "Forests"
+    }, {
+      "category": "Services",
+      "amount": 2,
+      "type": "Industrial Machinery and Equipment"
     }, {
       "category": "Travel",
       "amount": 28,
-      "type": "Transportation Centers"
-    }, {
-      "category": "Recreation",
-      "amount": 34,
-      "type": "Landmarks"
-    }, {
-      "category": "Travel",
-      "amount": 63,
       "type": "Airlines and Aviation Services"
     }, {
-      "category": "Service",
-      "amount": 4,
-      "type": "Business Services"
+      "category": "Recreation",
+      "amount": 54,
+      "type": "Outdoors"
     }, {
-      "category": "Service",
-      "amount": 19,
-      "type": "Plumbing"
+      "category": "Shops",
+      "amount": 97,
+      "type": "Women's Store"
     }, {
-      "category": "Healthcare",
-      "amount": 98,
-      "type": "Physical Therapy"
+      "category": "Travel",
+      "amount": 48,
+      "type": "Airports"
     }, {
-      "category": "Food and Drink",
-      "amount": 18,
+      "category": "Shops",
+      "amount": 43,
+      "type": "Hardware Store"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 40,
+      "type": "Hookah Lounges"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 68,
       "type": "Breakfast Spot"
     }, {
-      "category": "Recreation",
-      "amount": 6,
-      "type": "Landmarks"
-    }, {
-      "category": "Recreation",
-      "amount": 46,
-      "type": "Racquet Sports"
-    }, {
-      "category": "Payment",
-      "amount": 37,
-      "type": "Credit Card"
-    }, {
-      "category": "Recreation",
-      "amount": 43,
-      "type": "Lakes"
-    }, {
-      "category": "Recreation",
-      "amount": 43,
-      "type": "Mountains"
-    }, {
-      "category": "Recreation",
-      "amount": 50,
-      "type": "Racquetball"
-    }, {
-      "category": "Service",
-      "amount": 100,
-      "type": "Apartments, Condos and Houses"
-    }, {
-      "category": "Service",
-      "amount": 39,
-      "type": "Security and Safety"
-    }, {
-      "category": "Food and Drink",
-      "amount": 14,
-      "type": "Bar"
-    }, {
-      "category": "Service",
-      "amount": 94,
-      "type": "Credit Reporting"
-    }, {
-      "category": "Service",
-      "amount": 48,
-      "type": "Corporate Housing"
-    }, {
-      "category": "Service",
-      "amount": 12,
-      "type": "Laundry and Garment Services"
-    }, {
       "category": "Shops",
-      "amount": 64,
-      "type": "Hobby and Collectibles"
-    }, {
-      "category": "Service",
-      "amount": 61,
-      "type": "Business and Strategy Consulting"
+      "amount": 28,
+      "type": "Salvage Yards"
     }, {
       "category": "Recreation",
-      "amount": 61,
-      "type": "Athletic Fields"
-    }, {
-      "category": "Community",
-      "amount": 56,
-      "type": "Youth Organizations"
-    }, {
-      "category": "Transfer",
-      "amount": 54,
-      "type": "Benefits"
-    }, {
-      "category": "Shops",
-      "amount": 3,
-      "type": "Antiques"
-    }, {
-      "category": "Recreation",
-      "amount": 79,
-      "type": "Arcades and Amusement Parks"
-    }, {
-      "category": "Food and Drink",
-      "amount": 60,
-      "type": "Greek"
-    }, {
-      "category": "Shops",
-      "amount": 46,
-      "type": "Photos and Frames"
-    }, {
-      "category": "Service",
-      "amount": 100,
-      "type": "Hair Removal"
-    }, {
-      "category": "Shops",
-      "amount": 23,
-      "type": "Industrial Supplies"
-    }, {
-      "category": "Service",
-      "amount": 2,
-      "type": "Non-Metallic Minerals"
-    }, {
-      "category": "Service",
-      "amount": 5,
-      "type": "Manufacturing"
-    }, {
-      "category": "Service",
-      "amount": 101,
-      "type": "Hair Salons and Barbers"
-    }, {
-      "category": "Community",
-      "amount": 4,
-      "type": "Facilities and Nursing Homes"
-    }, {
-      "category": "Food and Drink",
-      "amount": 34,
-      "type": "Winery"
-    }, {
-      "category": "Food and Drink",
-      "amount": 75,
-      "type": "Internet Cafes"
-    }, {
-      "category": "Community",
-      "amount": 99,
-      "type": "Libraries"
-    }, {
-      "category": "Recreation",
-      "amount": 16,
-      "type": "Dance Halls and Saloons"
-    }, {
-      "category": "Healthcare",
-      "amount": 44,
-      "type": "Dentists"
-    }, {
-      "category": "Service",
-      "amount": 3,
-      "type": "Advertising and Marketing"
-    }, {
-      "category": "Bank Fees",
-      "amount": 47,
-      "type": "Wire Transfer"
-    }, {
-      "category": "Recreation",
-      "amount": 19,
-      "type": "Natural Parks"
-    }, {
-      "category": "Healthcare",
-      "amount": 15,
-      "type": "Physical Therapy"
+      "amount": 27,
+      "type": "Gun Ranges"
     }],
     "bills": [{
       "amount": 65,
@@ -419,8 +419,8 @@
     }],
     "name": "Student",
     "remainingCredit": 1200,
-    "balance": 4000,
     "savings": 700,
+    "balance": 4000,
     "loans": [{
       "apr": 3.5,
       "amount": 30000,
@@ -436,405 +436,405 @@
     }]
   }, {
     "purchases": [{
-      "category": "Shops",
-      "amount": 100,
-      "type": "Auctions"
-    }, {
-      "category": "Bank Fees",
-      "amount": 17,
-      "type": "Foreign Transaction"
-    }, {
-      "category": "Shops",
-      "amount": 86,
-      "type": "Lawn and Garden"
-    }, {
-      "category": "Service",
-      "amount": 30,
-      "type": "Human Resources"
-    }, {
-      "category": "Service",
-      "amount": 75,
-      "type": "Print, TV, Radio and Outdoor Advertising"
+      "category": "Services",
+      "amount": 4,
+      "type": "Architects"
     }, {
       "category": "Recreation",
-      "amount": 36,
-      "type": "Music and Show Venues"
-    }, {
-      "category": "Recreation",
-      "amount": 92,
-      "type": "Personal Trainers"
-    }, {
-      "category": "Service",
       "amount": 40,
-      "type": "Contractors"
-    }, {
-      "category": "Community",
-      "amount": 92,
-      "type": "Government Departments and Agencies"
-    }, {
-      "category": "Transfer",
-      "amount": 49,
-      "type": "Wire"
-    }, {
-      "category": "Shops",
-      "amount": 82,
-      "type": "Music, Video and DVD"
-    }, {
-      "category": "Shops",
-      "amount": 67,
-      "type": "Boutique"
-    }, {
-      "category": "Healthcare",
-      "amount": 56,
-      "type": "Cardiologists"
-    }, {
-      "category": "Recreation",
-      "amount": 70,
-      "type": "Rafting"
-    }, {
-      "category": "Community",
-      "amount": 56,
-      "type": "Disabled Persons Services"
-    }, {
-      "category": "Service",
-      "amount": 88,
-      "type": "Upholstery"
-    }, {
-      "category": "Service",
-      "amount": 73,
-      "type": "Commercial Real Estate"
-    }, {
-      "category": "Service",
-      "amount": 18,
-      "type": "Petroleum"
-    }, {
-      "category": "Service",
-      "amount": 54,
-      "type": "Towing"
-    }, {
-      "category": "Food and Drink",
-      "amount": 9,
-      "type": "Italian"
-    }, {
-      "category": "Bank Fees",
-      "amount": 37,
-      "type": "Overdraft"
-    }, {
-      "category": "Service",
-      "amount": 7,
-      "type": "Search Engine Marketing and Optimization"
-    }, {
-      "category": "Service",
-      "amount": 54,
-      "type": "Manicures and Pedicures"
-    }, {
-      "category": "Travel",
-      "amount": 42,
-      "type": "Parking"
-    }, {
-      "category": "Shops",
-      "amount": 30,
-      "type": "Electrical Equipment"
-    }, {
-      "category": "Shops",
-      "amount": 81,
-      "type": "Mobile Phones"
-    }, {
-      "category": "Service",
-      "amount": 56,
-      "type": "Coal"
-    }, {
-      "category": "Service",
-      "amount": 65,
-      "type": "Computers and Office Machines"
-    }, {
-      "category": "Food and Drink",
-      "amount": 39,
-      "type": "Middle Eastern"
-    }, {
-      "category": "Recreation",
-      "amount": 14,
       "type": "Gun Ranges"
     }, {
-      "category": "Healthcare",
-      "amount": 83,
-      "type": "Radiologists"
-    }, {
-      "category": "Service",
-      "amount": 36,
-      "type": "News Reporting"
-    }, {
-      "category": "Recreation",
-      "amount": 85,
-      "type": "Skating"
-    }, {
-      "category": "Recreation",
-      "amount": 88,
-      "type": "Symphony and Opera"
-    }, {
-      "category": "Service",
-      "amount": 35,
-      "type": "Shipping and Freight"
-    }, {
-      "category": "Community",
-      "amount": 62,
-      "type": "Art School"
-    }, {
-      "category": "Recreation",
-      "amount": 82,
-      "type": "Rivers"
-    }, {
-      "category": "Service",
-      "amount": 55,
-      "type": "Chemicals and Gasses"
-    }, {
-      "category": "Service",
-      "amount": 15,
-      "type": "Contractors"
-    }, {
-      "category": "Transfer",
-      "amount": 101,
-      "type": "Third Party"
-    }, {
-      "category": "Food and Drink",
-      "amount": 101,
-      "type": "Coffee Shop"
-    }, {
-      "category": "Service",
-      "amount": 51,
-      "type": "Personal Care"
-    }, {
-      "category": "Service",
-      "amount": 74,
-      "type": "Upholstery"
-    }, {
-      "category": "Service",
-      "amount": 65,
-      "type": "Agriculture and Forestry"
-    }, {
-      "category": "Service",
-      "amount": 85,
-      "type": "Tree Service"
-    }, {
-      "category": "Service",
-      "amount": 56,
-      "type": "Forestry"
-    }, {
-      "category": "Service",
-      "amount": 25,
-      "type": "Livestock and Animals"
-    }, {
-      "category": "Travel",
-      "amount": 25,
-      "type": "Car and Truck Rentals"
-    }, {
-      "category": "Travel",
-      "amount": 74,
-      "type": "Bus Stations"
-    }, {
-      "category": "Food and Drink",
-      "amount": 75,
-      "type": "Distillery"
-    }, {
-      "category": "Service",
-      "amount": 32,
-      "type": "Petroleum"
-    }, {
-      "category": "Recreation",
-      "amount": 44,
-      "type": "Swimming"
-    }, {
-      "category": "Service",
-      "amount": 92,
-      "type": "Non-Metallic Minerals"
-    }, {
-      "category": "Service",
-      "amount": 46,
-      "type": "Sanitary and Waste Management"
-    }, {
-      "category": "Travel",
-      "amount": 99,
-      "type": "Ride Share"
-    }, {
-      "category": "Bank Fees",
-      "amount": 45,
-      "type": "Insufficient Funds"
-    }, {
-      "category": "Service",
-      "amount": 40,
-      "type": "Pest Control"
-    }, {
-      "category": "Healthcare",
-      "amount": 48,
-      "type": "Dermatologists"
-    }, {
-      "category": "Service",
-      "amount": 27,
-      "type": "Lighting Fixtures"
-    }, {
-      "category": "Community",
-      "amount": 69,
-      "type": "Adult Education"
-    }, {
-      "category": "Recreation",
-      "amount": 94,
-      "type": "Rock Climbing"
-    }, {
-      "category": "Travel",
-      "amount": 38,
-      "type": "Boat"
-    }, {
-      "category": "Service",
-      "amount": 32,
-      "type": "Check Cashing"
-    }, {
-      "category": "Healthcare",
-      "amount": 35,
-      "type": "Family Medicine"
-    }, {
-      "category": "Service",
-      "amount": 30,
-      "type": "Gas"
-    }, {
-      "category": "Food and Drink",
-      "amount": 65,
-      "type": "Pizza"
-    }, {
-      "category": "Service",
-      "amount": 57,
-      "type": "Maintenance and Repair"
-    }, {
-      "category": "Recreation",
-      "amount": 6,
-      "type": "Arcades and Amusement Parks"
+      "category": "Shops",
+      "amount": 70,
+      "type": "RVs and Motor Homes"
     }, {
       "category": "Shops",
-      "amount": 24,
-      "type": "Costumes"
+      "amount": 80,
+      "type": "Hobby and Collectibles"
     }, {
       "category": "Travel",
-      "amount": 86,
-      "type": "Lodging"
+      "amount": 13,
+      "type": "Limos and Chauffeurs"
     }, {
-      "category": "Food and Drink",
-      "amount": 95,
-      "type": "Bakery"
-    }, {
-      "category": "Food and Drink",
-      "amount": 2,
-      "type": "Sports Bar"
-    }, {
-      "category": "Service",
-      "amount": 86,
-      "type": "Home Inspection Services"
-    }, {
-      "category": "Shops",
-      "amount": 4,
-      "type": "Computers and Electronics"
-    }, {
-      "category": "Recreation",
-      "amount": 53,
-      "type": "Outdoors"
-    }, {
-      "category": "Transfer",
-      "amount": 69,
-      "type": "Plaid"
-    }, {
-      "category": "Service",
-      "amount": 50,
-      "type": "Textiles"
-    }, {
-      "category": "Transfer",
-      "amount": 22,
-      "type": "Billpay"
-    }, {
-      "category": "Food and Drink",
-      "amount": 94,
-      "type": "Bagel Shop"
-    }, {
-      "category": "Food and Drink",
-      "amount": 19,
-      "type": "Swiss"
-    }, {
-      "category": "Recreation",
-      "amount": 71,
-      "type": "Hiking"
-    }, {
-      "category": "Food and Drink",
-      "amount": 8,
-      "type": "Middle Eastern"
-    }, {
-      "category": "Service",
-      "amount": 6,
-      "type": "Transportation"
-    }, {
-      "category": "Service",
-      "amount": 55,
-      "type": "Internet Services"
-    }, {
-      "category": "Service",
-      "amount": 8,
-      "type": "Furniture and Fixtures"
-    }, {
-      "category": "Healthcare",
-      "amount": 20,
-      "type": "Obstetricians and Gynecologists"
-    }, {
-      "category": "Recreation",
-      "amount": 10,
-      "type": "Hockey"
-    }, {
-      "category": "Recreation",
-      "amount": 66,
-      "type": "Scuba Diving"
-    }, {
-      "category": "Food and Drink",
-      "amount": 20,
-      "type": "Coffee Shop"
-    }, {
-      "category": "Recreation",
-      "amount": 51,
-      "type": "Landmarks"
-    }, {
-      "category": "Service",
-      "amount": 65,
-      "type": "Audiovisual"
-    }, {
-      "category": "Service",
-      "amount": 21,
-      "type": "Heating, Ventilation and Air Conditioning"
-    }, {
-      "category": "Service",
-      "amount": 21,
-      "type": "Roofers"
-    }, {
-      "category": "Transfer",
-      "amount": 37,
-      "type": "Dwolla"
-    }, {
-      "category": "Service",
-      "amount": 53,
-      "type": "Scientific"
-    }, {
-      "category": "Service",
+      "category": "Services",
       "amount": 59,
-      "type": "Business and Strategy Consulting"
+      "type": "Transportation Equipment"
+    }, {
+      "category": "Healthcare",
+      "amount": 49,
+      "type": "Respiratory"
+    }, {
+      "category": "Recreation",
+      "amount": 73,
+      "type": "Personal Trainers"
+    }, {
+      "category": "Travel",
+      "amount": 70,
+      "type": "Car Service"
+    }, {
+      "category": "Recreation",
+      "amount": 12,
+      "type": "Hunting and Fishing"
+    }, {
+      "category": "Travel",
+      "amount": 95,
+      "type": "Airlines and Aviation Services"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 71,
+      "type": "Internet Cafes"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 25,
+      "type": "Vegan and Vegetarian"
+    }, {
+      "category": "Services",
+      "amount": 15,
+      "type": "Laundry and Garment Services"
+    }, {
+      "category": "Recreation",
+      "amount": 41,
+      "type": "Picnic Areas"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 52,
+      "type": "Asian"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 66,
+      "type": "African"
+    }, {
+      "category": "Travel",
+      "amount": 101,
+      "type": "Airports"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 49,
+      "type": "Night Clubs"
     }, {
       "category": "Shops",
       "amount": 11,
-      "type": "Gift and Novelty"
+      "type": "Glasses and Optometrist"
     }, {
-      "category": "Service",
-      "amount": 89,
-      "type": "Services"
+      "category": "Food and Drinks",
+      "amount": 9,
+      "type": "Diners"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 64,
+      "type": "Night Clubs"
+    }, {
+      "category": "Travel",
+      "amount": 73,
+      "type": "Airports"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 13,
+      "type": "Middle Eastern"
+    }, {
+      "category": "Recreation",
+      "amount": 39,
+      "type": "Boating"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 68,
+      "type": "Steakhouses"
+    }, {
+      "category": "Shops",
+      "amount": 39,
+      "type": "Boutique"
+    }, {
+      "category": "Shops",
+      "amount": 90,
+      "type": "Pharmacies"
+    }, {
+      "category": "Healthcare",
+      "amount": 30,
+      "type": "Emergency Services"
     }, {
       "category": "Community",
-      "amount": 99,
-      "type": "Computer Training"
+      "amount": 41,
+      "type": "Law Enforcement"
     }, {
-      "category": "Food and Drink",
-      "amount": 2,
-      "type": "Delis"
+      "category": "Food and Drinks",
+      "amount": 92,
+      "type": "Steakhouses"
+    }, {
+      "category": "Shops",
+      "amount": 53,
+      "type": "Car Parts and Accessories"
+    }, {
+      "category": "Shops",
+      "amount": 65,
+      "type": "Electrical Equipment"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 101,
+      "type": "Scandinavian"
+    }, {
+      "category": "Services",
+      "amount": 66,
+      "type": "Paper Products"
+    }, {
+      "category": "Community",
+      "amount": 77,
+      "type": "Post Offices"
+    }, {
+      "category": "Travel",
+      "amount": 11,
+      "type": "Cruises"
+    }, {
+      "category": "Shops",
+      "amount": 80,
+      "type": "Accessories Store"
+    }, {
+      "category": "Recreation",
+      "amount": 47,
+      "type": "Paintball"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 62,
+      "type": "Mexican"
+    }, {
+      "category": "Travel",
+      "amount": 92,
+      "type": "Hostels"
+    }, {
+      "category": "Shops",
+      "amount": 62,
+      "type": "Photos and Frames"
+    }, {
+      "category": "Shops",
+      "amount": 40,
+      "type": "Mobile Phones"
+    }, {
+      "category": "Travel",
+      "amount": 65,
+      "type": "Ride Share"
+    }, {
+      "category": "Healthcare",
+      "amount": 95,
+      "type": "Respiratory"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 30,
+      "type": "Afghan"
+    }, {
+      "category": "Travel",
+      "amount": 39,
+      "type": "Lodges and Vacation Rentals"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 49,
+      "type": "Hookah Lounges"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 91,
+      "type": "Dessert"
+    }, {
+      "category": "Shops",
+      "amount": 19,
+      "type": "Car Parts and Accessories"
+    }, {
+      "category": "Shops",
+      "amount": 60,
+      "type": "Pharmacies"
+    }, {
+      "category": "Shops",
+      "amount": 91,
+      "type": "Shoe Store"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 35,
+      "type": "Sushi"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 66,
+      "type": "Adult Entertainment"
+    }, {
+      "category": "Travel",
+      "amount": 99,
+      "type": "Car and Truck Rentals"
+    }, {
+      "category": "Services",
+      "amount": 4,
+      "type": "Insurance"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 85,
+      "type": "Mediterranean"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 65,
+      "type": "Mexican"
+    }, {
+      "category": "Shops",
+      "amount": 4,
+      "type": "Construction Supplies"
+    }, {
+      "category": "Recreation",
+      "amount": 79,
+      "type": "Natural Parks"
+    }, {
+      "category": "Travel",
+      "amount": 64,
+      "type": "Tolls and Fees"
+    }, {
+      "category": "Recreation",
+      "amount": 77,
+      "type": "Art Dealers and Galleries"
+    }, {
+      "category": "Travel",
+      "amount": 39,
+      "type": "Lodges and Vacation Rentals"
+    }, {
+      "category": "Shops",
+      "amount": 39,
+      "type": "Accessories Store"
+    }, {
+      "category": "Recreation",
+      "amount": 97,
+      "type": "Football"
+    }, {
+      "category": "Travel",
+      "amount": 92,
+      "type": "Lodging"
+    }, {
+      "category": "Recreation",
+      "amount": 55,
+      "type": "Skydiving"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 80,
+      "type": "Indonesian"
+    }, {
+      "category": "Travel",
+      "amount": 12,
+      "type": "Airlines and Aviation Services"
+    }, {
+      "category": "Travel",
+      "amount": 31,
+      "type": "Heliports"
+    }, {
+      "category": "Recreation",
+      "amount": 67,
+      "type": "Picnic Areas"
+    }, {
+      "category": "Shops",
+      "amount": 80,
+      "type": "Classic and Antique Car"
+    }, {
+      "category": "Shops",
+      "amount": 82,
+      "type": "Florists"
+    }, {
+      "category": "Shops",
+      "amount": 10,
+      "type": "Computers and Electronics"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 32,
+      "type": "Steakhouses"
+    }, {
+      "category": "Shops",
+      "amount": 86,
+      "type": "Music, Video and DVD"
+    }, {
+      "category": "Services",
+      "amount": 26,
+      "type": "Piercing"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 17,
+      "type": "Mexican"
+    }, {
+      "category": "Travel",
+      "amount": 4,
+      "type": "Lodges and Vacation Rentals"
+    }, {
+      "category": "Travel",
+      "amount": 54,
+      "type": "Public Transportation Services"
+    }, {
+      "category": "Recreation",
+      "amount": 59,
+      "type": "Gyms and Fitness Centers"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 32,
+      "type": "American"
+    }, {
+      "category": "Recreation",
+      "amount": 41,
+      "type": "Racquet Sports"
+    }, {
+      "category": "Shops",
+      "amount": 54,
+      "type": "Music, Video and DVD"
+    }, {
+      "category": "Services",
+      "amount": 36,
+      "type": "Water and Waste Management"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 67,
+      "type": "Hookah Lounges"
+    }, {
+      "category": "Travel",
+      "amount": 39,
+      "type": "Rail"
+    }, {
+      "category": "Shops",
+      "amount": 77,
+      "type": "Toys"
+    }, {
+      "category": "Travel",
+      "amount": 22,
+      "type": "Transportation Centers"
+    }, {
+      "category": "Travel",
+      "amount": 14,
+      "type": "Tolls and Fees"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 30,
+      "type": "Bar"
+    }, {
+      "category": "Travel",
+      "amount": 9,
+      "type": "Public Transportation Services"
+    }, {
+      "category": "Shops",
+      "amount": 24,
+      "type": "Equipment Rental"
+    }, {
+      "category": "Travel",
+      "amount": 26,
+      "type": "Taxi"
+    }, {
+      "category": "Travel",
+      "amount": 79,
+      "type": "Car and Truck Rentals"
+    }, {
+      "category": "Travel",
+      "amount": 27,
+      "type": "Ride Share"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 4,
+      "type": "Indian"
+    }, {
+      "category": "Travel",
+      "amount": 68,
+      "type": "Heliports"
+    }, {
+      "category": "Travel",
+      "amount": 85,
+      "type": "Limos and Chauffeurs"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 49,
+      "type": "Greek"
     }],
     "bills": [{
       "amount": 1530,
@@ -854,8 +854,8 @@
     }],
     "name": "Older Guy",
     "remainingCredit": 3000,
-    "balance": 12000,
     "savings": 70000,
+    "balance": 12000,
     "loans": [{
       "apr": 2.75,
       "amount": 8000,
@@ -867,411 +867,411 @@
     }]
   }, {
     "purchases": [{
-      "category": "Healthcare",
-      "amount": 81,
-      "type": "Hospitals, Clinics and Medical Centers"
+      "category": "Travel",
+      "amount": 65,
+      "type": "Rail"
     }, {
-      "category": "Service",
+      "category": "Food and Drinks",
+      "amount": 13,
+      "type": "Bagel Shop"
+    }, {
+      "category": "Shops",
+      "amount": 92,
+      "type": "Women's Store"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 48,
+      "type": "Bagel Shop"
+    }, {
+      "category": "Shops",
+      "amount": 99,
+      "type": "Automotive"
+    }, {
+      "category": "Recreation",
       "amount": 41,
-      "type": "Metals"
+      "type": "Paintball"
     }, {
-      "category": "Shops",
-      "amount": 39,
-      "type": "Music, Video and DVD"
-    }, {
-      "category": "Service",
-      "amount": 71,
-      "type": "Services"
-    }, {
-      "category": "Recreation",
-      "amount": 97,
-      "type": "Sports Venues"
-    }, {
-      "category": "Service",
-      "amount": 101,
-      "type": "Water"
-    }, {
-      "category": "Food and Drink",
-      "amount": 78,
-      "type": "Seafood"
-    }, {
-      "category": "Food and Drink",
-      "amount": 8,
-      "type": "Steakhouses"
-    }, {
-      "category": "Transfer",
-      "amount": 22,
-      "type": "Debit"
-    }, {
-      "category": "Healthcare",
-      "amount": 92,
-      "type": "Podiatrists"
-    }, {
-      "category": "Service",
-      "amount": 100,
-      "type": "Industrial Machinery and Equipment"
-    }, {
-      "category": "Service",
-      "amount": 46,
-      "type": "Non-Metallic Minerals"
-    }, {
-      "category": "Food and Drink",
-      "amount": 5,
-      "type": "Fast Food"
-    }, {
-      "category": "Service",
-      "amount": 22,
-      "type": "Mobile Homes"
-    }, {
-      "category": "Transfer",
-      "amount": 92,
-      "type": "Square"
-    }, {
-      "category": "Service",
-      "amount": 20,
-      "type": "Coal"
-    }, {
-      "category": "Food and Drink",
-      "amount": 27,
-      "type": "Sushi"
-    }, {
-      "category": "Service",
-      "amount": 91,
-      "type": "Storage"
-    }, {
-      "category": "Service",
-      "amount": 7,
-      "type": "Laundry and Garment Services"
-    }, {
-      "category": "Community",
-      "amount": 19,
-      "type": "Assisted Living Services"
-    }, {
-      "category": "Travel",
-      "amount": 90,
-      "type": "Transportation Centers"
-    }, {
-      "category": "Service",
-      "amount": 8,
-      "type": "Forestry"
-    }, {
-      "category": "Shops",
-      "amount": 51,
-      "type": "Accessories Store"
-    }, {
-      "category": "Food and Drink",
-      "amount": 4,
-      "type": "Distillery"
-    }, {
-      "category": "Travel",
-      "amount": 31,
-      "type": "Resorts"
-    }, {
-      "category": "Service",
-      "amount": 21,
-      "type": "Writing, Copywriting and Technical Writing"
-    }, {
-      "category": "Service",
-      "amount": 84,
-      "type": "Water"
-    }, {
-      "category": "Service",
-      "amount": 4,
-      "type": "Storage"
-    }, {
-      "category": "Recreation",
-      "amount": 84,
-      "type": "Equestrian"
-    }, {
-      "category": "Recreation",
+      "category": "Food and Drinks",
       "amount": 34,
-      "type": "Gymnastics"
-    }, {
-      "category": "Service",
-      "amount": 15,
-      "type": "Market Research and Consulting"
-    }, {
-      "category": "Shops",
-      "amount": 1,
-      "type": "Digital Purchase"
-    }, {
-      "category": "Service",
-      "amount": 2,
-      "type": "Auto Smog Check"
-    }, {
-      "category": "Shops",
-      "amount": 68,
-      "type": "Kids' Store"
+      "type": "Barbecue"
     }, {
       "category": "Community",
-      "amount": 61,
+      "amount": 69,
       "type": "Youth Organizations"
     }, {
-      "category": "Service",
-      "amount": 18,
-      "type": "Art and Graphic Design"
+      "category": "Travel",
+      "amount": 75,
+      "type": "Gas Stations"
     }, {
       "category": "Shops",
       "amount": 54,
-      "type": "Pawn Shops"
+      "type": "Jewelry and Watches"
     }, {
-      "category": "Recreation",
-      "amount": 91,
-      "type": "Zoo"
+      "category": "Food and Drinks",
+      "amount": 42,
+      "type": "Portuguese"
     }, {
-      "category": "Community",
-      "amount": 100,
-      "type": "Culinary Lessons and Schools"
+      "category": "Services",
+      "amount": 65,
+      "type": "Cleaning"
     }, {
-      "category": "Healthcare",
-      "amount": 69,
-      "type": "Gastroenterologists"
-    }, {
-      "category": "Recreation",
-      "amount": 1,
-      "type": "Arcades and Amusement Parks"
-    }, {
-      "category": "Community",
-      "amount": 23,
-      "type": "Youth Organizations"
-    }, {
-      "category": "Food and Drink",
-      "amount": 64,
-      "type": "Cafe"
-    }, {
-      "category": "Recreation",
-      "amount": 23,
-      "type": "Scuba Diving"
-    }, {
-      "category": "Shops",
-      "amount": 81,
-      "type": "Beer, Wine and Spirits"
-    }, {
-      "category": "Shops",
-      "amount": 48,
-      "type": "Arts and Crafts"
-    }, {
-      "category": "Healthcare",
-      "amount": 101,
-      "type": "Blood Banks and Centers"
-    }, {
-      "category": "Food and Drink",
-      "amount": 71,
-      "type": "Bakery"
-    }, {
-      "category": "Recreation",
-      "amount": 25,
-      "type": "Buildings and Structures"
-    }, {
-      "category": "Service",
-      "amount": 38,
-      "type": "Auto Smog Check"
+      "category": "Food and Drinks",
+      "amount": 18,
+      "type": "African"
     }, {
       "category": "Shops",
       "amount": 10,
-      "type": "Beauty Products"
-    }, {
-      "category": "Food and Drink",
-      "amount": 87,
-      "type": "Bagel Shop"
-    }, {
-      "category": "Service",
-      "amount": 24,
-      "type": "Skin Care"
-    }, {
-      "category": "Service",
-      "amount": 43,
-      "type": "Travel Agents and Tour Operators"
-    }, {
-      "category": "Healthcare",
-      "amount": 4,
-      "type": "Dermatologists"
+      "type": "Specialty"
     }, {
       "category": "Shops",
-      "amount": 82,
-      "type": "Auctions"
-    }, {
-      "category": "Shops",
-      "amount": 65,
-      "type": "Classic and Antique Car"
-    }, {
-      "category": "Community",
-      "amount": 81,
-      "type": "Retirement"
+      "amount": 64,
+      "type": "Beer, Wine and Spirits"
     }, {
       "category": "Healthcare",
-      "amount": 69,
-      "type": "Pathologists"
-    }, {
-      "category": "Recreation",
       "amount": 73,
-      "type": "Lakes"
+      "type": "Physicians"
     }, {
-      "category": "Service",
-      "amount": 6,
-      "type": "Dating and Escort"
+      "category": "Travel",
+      "amount": 73,
+      "type": "Car and Truck Rentals"
+    }, {
+      "category": "Shops",
+      "amount": 33,
+      "type": "Digital Purchase"
+    }, {
+      "category": "Travel",
+      "amount": 60,
+      "type": "Bed and Breakfasts"
+    }, {
+      "category": "Travel",
+      "amount": 40,
+      "type": "Rail"
+    }, {
+      "category": "Travel",
+      "amount": 18,
+      "type": "Lodging"
+    }, {
+      "category": "Travel",
+      "amount": 92,
+      "type": "Hostels"
+    }, {
+      "category": "Travel",
+      "amount": 60,
+      "type": "Heliports"
+    }, {
+      "category": "Services",
+      "amount": 91,
+      "type": "Home Improvement"
+    }, {
+      "category": "Shops",
+      "amount": 88,
+      "type": "Toys"
+    }, {
+      "category": "Travel",
+      "amount": 69,
+      "type": "Gas Stations"
     }, {
       "category": "Community",
-      "amount": 81,
-      "type": "Government Departments and Agencies"
+      "amount": 29,
+      "type": "Drug and Alcohol Services"
     }, {
-      "category": "Food and Drink",
-      "amount": 2,
-      "type": "Bagel Shop"
-    }, {
-      "category": "Service",
-      "amount": 5,
-      "type": "Paper"
-    }, {
-      "category": "Food and Drink",
-      "amount": 60,
-      "type": "Brazilian"
+      "category": "Travel",
+      "amount": 16,
+      "type": "Hotels and Motels"
     }, {
       "category": "Recreation",
       "amount": 33,
+      "type": "Hot Air Balloons"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 101,
+      "type": "Moroccan"
+    }, {
+      "category": "Travel",
+      "amount": 76,
+      "type": "Limos and Chauffeurs"
+    }, {
+      "category": "Travel",
+      "amount": 38,
+      "type": "Cottages and Cabins"
+    }, {
+      "category": "Shops",
+      "amount": 29,
+      "type": "Costumes"
+    }, {
+      "category": "Recreation",
+      "amount": 96,
+      "type": "Cycling"
+    }, {
+      "category": "Shops",
+      "amount": 7,
+      "type": "Gift and Novelty"
+    }, {
+      "category": "Travel",
+      "amount": 27,
+      "type": "Transportation Centers"
+    }, {
+      "category": "Recreation",
+      "amount": 50,
+      "type": "Art Dealers and Galleries"
+    }, {
+      "category": "Healthcare",
+      "amount": 10,
+      "type": "Respiratory"
+    }, {
+      "category": "Shops",
+      "amount": 89,
+      "type": "Musical Instruments"
+    }, {
+      "category": "Travel",
+      "amount": 90,
+      "type": "Public Transportation Services"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 60,
+      "type": "Portuguese"
+    }, {
+      "category": "Shops",
+      "amount": 58,
+      "type": "Toys"
+    }, {
+      "category": "Shops",
+      "amount": 51,
+      "type": "Sporting Goods"
+    }, {
+      "category": "Recreation",
+      "amount": 40,
       "type": "Baseball"
     }, {
-      "category": "Community",
-      "amount": 37,
-      "type": "Senior Citizen Services"
-    }, {
-      "category": "Healthcare",
-      "amount": 99,
-      "type": "Pregnancy and Sexual Health"
-    }, {
-      "category": "Service",
-      "amount": 60,
-      "type": "Agriculture and Forestry"
-    }, {
-      "category": "Transfer",
-      "amount": 7,
-      "type": "Third Party"
-    }, {
-      "category": "Shops",
-      "amount": 9,
-      "type": "Cards and Stationery"
-    }, {
-      "category": "Food and Drink",
-      "amount": 5,
-      "type": "Greek"
+      "category": "Recreation",
+      "amount": 65,
+      "type": "Tennis"
     }, {
       "category": "Recreation",
-      "amount": 16,
-      "type": "Canoes and Kayaks"
+      "amount": 78,
+      "type": "Sports Venues"
     }, {
-      "category": "Food and Drink",
-      "amount": 35,
-      "type": "Breakfast Spot"
-    }, {
-      "category": "Healthcare",
-      "amount": 48,
-      "type": "Gastroenterologists"
-    }, {
-      "category": "Service",
-      "amount": 13,
-      "type": "Audiovisual"
-    }, {
-      "category": "Service",
-      "amount": 41,
-      "type": "Scientific"
-    }, {
-      "category": "Service",
-      "amount": 53,
-      "type": "Hardware and Services"
-    }, {
-      "category": "Transfer",
-      "amount": 37,
-      "type": "Credit"
-    }, {
-      "category": "Service",
-      "amount": 3,
-      "type": "Home Improvement"
-    }, {
-      "category": "Recreation",
-      "amount": 45,
-      "type": "Paintball"
-    }, {
-      "category": "Food and Drink",
+      "category": "Food and Drinks",
       "amount": 14,
-      "type": "Chinese"
+      "type": "Korean"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 83,
+      "type": "Eastern European"
     }, {
       "category": "Shops",
+      "amount": 31,
+      "type": "Luggage"
+    }, {
+      "category": "Recreation",
+      "amount": 24,
+      "type": "Psychics and Astrologers"
+    }, {
+      "category": "Travel",
+      "amount": 20,
+      "type": "Taxi"
+    }, {
+      "category": "Recreation",
+      "amount": 2,
+      "type": "Music and Show Venues"
+    }, {
+      "category": "Travel",
+      "amount": 83,
+      "type": "Limos and Chauffeurs"
+    }, {
+      "category": "Shops",
+      "amount": 90,
+      "type": "Costumes"
+    }, {
+      "category": "Travel",
       "amount": 95,
-      "type": "Motorcycles, Mopeds and Scooters"
-    }, {
-      "category": "Service",
-      "amount": 6,
-      "type": "Renewable Energy"
-    }, {
-      "category": "Food and Drink",
-      "amount": 66,
-      "type": "Bakery"
-    }, {
-      "category": "Food and Drink",
-      "amount": 3,
-      "type": "Asian"
-    }, {
-      "category": "Community",
-      "amount": 36,
-      "type": "Charities and Non-Profits"
-    }, {
-      "category": "Community",
-      "amount": 34,
-      "type": "Tutoring and Educational Services"
-    }, {
-      "category": "Community",
-      "amount": 48,
-      "type": "Public and Social Services"
-    }, {
-      "category": "Community",
-      "amount": 89,
-      "type": "Assisted Living Services"
-    }, {
-      "category": "Shops",
-      "amount": 96,
-      "type": "Fuel Dealer"
-    }, {
-      "category": "Healthcare",
-      "amount": 6,
-      "type": "Psychiatrists"
-    }, {
-      "category": "Service",
-      "amount": 7,
-      "type": "Car Wash and Detail"
-    }, {
-      "category": "Community",
-      "amount": 13,
-      "type": "Computer Training"
+      "type": "Boat"
     }, {
       "category": "Shops",
       "amount": 19,
-      "type": "Clothing and Accessories"
+      "type": "Kids' Store"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 7,
+      "type": "Brazilian"
+    }, {
+      "category": "Services",
+      "amount": 88,
+      "type": "Media Production"
+    }, {
+      "category": "Travel",
+      "amount": 31,
+      "type": "Rail"
+    }, {
+      "category": "Shops",
+      "amount": 100,
+      "type": "Construction Supplies"
+    }, {
+      "category": "Recreation",
+      "amount": 90,
+      "type": "Natural Parks"
+    }, {
+      "category": "Shops",
+      "amount": 3,
+      "type": "Automotive"
+    }, {
+      "category": "Travel",
+      "amount": 20,
+      "type": "Transportation Centers"
+    }, {
+      "category": "Travel",
+      "amount": 42,
+      "type": "Parking"
+    }, {
+      "category": "Travel",
+      "amount": 57,
+      "type": "Ride Share"
+    }, {
+      "category": "Shops",
+      "amount": 65,
+      "type": "Outlet"
+    }, {
+      "category": "Shops",
+      "amount": 16,
+      "type": "Pharmacies"
+    }, {
+      "category": "Shops",
+      "amount": 36,
+      "type": "Equipment Rental"
+    }, {
+      "category": "Services",
+      "amount": 17,
+      "type": "Housewares"
+    }, {
+      "category": "Shops",
+      "amount": 35,
+      "type": "Marine Supplies"
+    }, {
+      "category": "Travel",
+      "amount": 64,
+      "type": "Limos and Chauffeurs"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 85,
+      "type": "Middle Eastern"
+    }, {
+      "category": "Recreation",
+      "amount": 91,
+      "type": "Playgrounds"
+    }, {
+      "category": "Shops",
+      "amount": 7,
+      "type": "Discount Stores"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 10,
+      "type": "Ethiopian"
+    }, {
+      "category": "Services",
+      "amount": 71,
+      "type": "Roofers"
+    }, {
+      "category": "Travel",
+      "amount": 4,
+      "type": "Gas Stations"
+    }, {
+      "category": "Shops",
+      "amount": 71,
+      "type": "Pawn Shops"
+    }, {
+      "category": "Community",
+      "amount": 31,
+      "type": "Mosques"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 9,
+      "type": "Sports Bar"
+    }, {
+      "category": "Recreation",
+      "amount": 40,
+      "type": "Hot Air Balloons"
+    }, {
+      "category": "Travel",
+      "amount": 46,
+      "type": "Car Service"
+    }, {
+      "category": "Travel",
+      "amount": 30,
+      "type": "Ride Share"
+    }, {
+      "category": "Travel",
+      "amount": 30,
+      "type": "Cruises"
+    }, {
+      "category": "Services",
+      "amount": 80,
+      "type": "Carpet and Flooring"
+    }, {
+      "category": "Travel",
+      "amount": 57,
+      "type": "Car Service"
+    }, {
+      "category": "Travel",
+      "amount": 88,
+      "type": "Cottages and Cabins"
+    }, {
+      "category": "Community",
+      "amount": 3,
+      "type": "Vocational Schools"
+    }, {
+      "category": "Travel",
+      "amount": 39,
+      "type": "Parking"
     }, {
       "category": "Recreation",
       "amount": 98,
-      "type": "Zoo"
+      "type": "Hunting and Fishing"
     }, {
-      "category": "Service",
-      "amount": 54,
-      "type": "Pools and Spas"
-    }, {
-      "category": "Community",
-      "amount": 10,
-      "type": "Post Offices"
+      "category": "Food and Drinks",
+      "amount": 68,
+      "type": "Seafood"
     }, {
       "category": "Recreation",
-      "amount": 13,
-      "type": "Tennis"
+      "amount": 36,
+      "type": "Art Dealers and Galleries"
     }, {
-      "category": "Transfer",
-      "amount": 13,
-      "type": "Square"
+      "category": "Travel",
+      "amount": 59,
+      "type": "Parking"
+    }, {
+      "category": "Food and Drinks",
+      "amount": 101,
+      "type": "Spanish"
+    }, {
+      "category": "Recreation",
+      "amount": 54,
+      "type": "Personal Trainers"
+    }, {
+      "category": "Travel",
+      "amount": 81,
+      "type": "Gas Stations"
+    }, {
+      "category": "Shops",
+      "amount": 78,
+      "type": "Department Stores"
+    }, {
+      "category": "Shops",
+      "amount": 90,
+      "type": "Food and Beverage Store"
+    }, {
+      "category": "Recreation",
+      "amount": 15,
+      "type": "Museums"
+    }, {
+      "category": "Shops",
+      "amount": 11,
+      "type": "Wholesale"
     }],
     "bills": {},
     "name": "Young Girl",
     "remainingCredit": 0,
-    "balance": 50,
     "savings": 350,
+    "balance": 50,
     "loans": {}
   }]
 }
