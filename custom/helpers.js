@@ -18,6 +18,24 @@ function toTitleCase(str)
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
 
+function getLastBills(num){
+	const usersData = auth.getCurrentUserData();
+	if(num <= 0){
+		num = 5;
+	}
+	output = `Your next ${num} bills are `;
+	num = Math.min(num,usersData.bills.length);
+	for(let i =0; i < num;i++){
+		if(i == num-1){
+			output+= `and `;
+		}
+		if(i < usersData.bills.length){
+			output += `${usersData.bills[i].type} for $${usersData.bills[i].amount}, `;
+		}
+	}
+	return output;
+}
+
 function getBills(billType) {
     let user = auth.getCurrentUserData(); // get user object
     let bills = user.bills; // get list of bill objects
