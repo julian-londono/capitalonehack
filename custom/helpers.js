@@ -1,4 +1,5 @@
 const user_data = require('../userdata.json'); // static user data
+
 const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
 const auth = require('../custom/auth'); // pseudo authentication and authorization
 
@@ -13,9 +14,22 @@ function checkBillExists(billType, bills) {
     return {};
 }
 
-function toTitleCase(str)
-{
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+function getLastBills(num){
+	const usersData = auth.getCurrentUserData();
+	if(num <= 0){
+		num = 5;
+	}
+	output = `Your next ${num} bills are `;
+	num = Math.min(num,usersData.bills.length);
+	for(let i =0; i < num;i++){
+		if(i == num-1){
+			output+= `and `;
+		}
+		if(i < usersData.bills.length){
+			output += `${usersData.bills[i].type} for $${usersData.bills[i].amount}, `;
+		}
+	}
+	return output;
 }
 
 function getBills(billType) {
@@ -28,9 +42,14 @@ function getBills(billType) {
 
     // if the account has bills associated with it
     if (bills.length) {
-        // if there are no parameters provided / current_bill is empty
-        if (Object.keys(current_bill).length === 0) {
+        // if there is no bill w/ that name
+        console.log(typeof billType);
+        if (billType == "") {
             output += 'Would you like to pay off all your bills?';
+        }
+        // if there are no parameters provided
+        else if (Object.keys(current_bill).length === 0) {
+            output += `I cannot find a bill for ${billType}.`;
         } else {
             // if there is enough money to pay off the bill
             if (current_bill.amount < balance) {
@@ -80,20 +99,22 @@ function getLargePurchases(min, numberToDisplay){
 
 	let output = "";
 
-	output += `Here are your top ${numberToDisplay} most expensive purchases. `;
+	output += `Here are your top ${numberToDisplay} most expensive purchases: `;
 
 	for (let i = 0; i < purchases.length; i++){
 		if (i < numberToDisplay && purchases[i].amount >= min){
 			if(i != numberToDisplay - 1){
-				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount}\n`
-				output += `seems large,, and `; // Natural pause and space between sentences
+				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount}`
+				output += `,, and `; // Natural pause and space between sentences
 			}
 
 			if(i == numberToDisplay - 1){
-				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount} seems really large.\n`
+				output += `Purchase ${i+1} of ${purchases[i].type} for $${purchases[i].amount}.`
 			}
 		}
 	}
+
+	output += ` Let's talk risk. ${riskAnalysis.getSuspiciousPurchases(numberToDisplay)}`;
 
 	if(output === ""){
 		return `Sorry, there are no purchases above the price of $${min}`;
@@ -136,5 +157,5 @@ module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
 module.exports.getBills = getBills;
 module.exports.getAccountBalance = getAccountBalance;
-module.exports.getSpending = getSpending;
 module.exports.toTitleCase = toTitleCase;
+module.exports.getSpending = getSpending;
