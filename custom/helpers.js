@@ -54,7 +54,7 @@ function payBills(billType) {
         } else {
             // if there is enough money to pay off the bill
             if (current_bill.amount < balance) {
-                output += `Okay, I have paid off your ${billType} bill. Your balance has changed from ${balance} to `;
+                output += `Okay, I have paid off your ${billType} bill that cost ${current_bill.amount}. Your balance has changed from ${balance} to `;
                 balance -= current_bill.amount;
                 output += `${balance}`;
             } else {
