@@ -155,20 +155,22 @@ function getSpending(category){
 
 // Ben & Richard
 function analyzeTransactions(){
-		const user = auth.getCurrentUserData(); // get current user data
+    const user = auth.getCurrentUserData(); // get current user data
 
     return 'a';
 }
 
 // Ben & Richard
 function analyzeHabits(){
-		const user = auth.getCurrentUserData(); // get current user data
+    const user = auth.getCurrentUserData(); // get current user data
+
     return 'a';
 }
 
 // Julian & Nick
 function giveGeneralAdvice(){
-		const user = auth.getCurrentUserData(); // get current user data
+    const user = auth.getCurrentUserData(); // get current user data
+    
     return 'a';
 }
 
