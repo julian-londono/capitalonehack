@@ -170,7 +170,7 @@ function analyzeHabits(){
 // Julian & Nick
 function giveGeneralAdvice(){
     const user = auth.getCurrentUserData(); // get current user data
-    
+
     return 'a';
 }
 
@@ -182,3 +182,4 @@ module.exports.getSpending = getSpending;
 module.exports.analyzeTransactions = analyzeTransactions;
 module.exports.analyzeHabits = analyzeHabits;
 module.exports.giveGeneralAdvice = giveGeneralAdvice;
+module.exports.getLastBills = getLastBills;
