@@ -102,7 +102,7 @@ function getLargePurchases(min, numberToDisplay){
 		}
 	}
 
-	console.log(riskAnalysis.getSuspiciousPurchases(numberToDisplay))
+	output += ` Let's talk risk. ${riskAnalysis.getSuspiciousPurchases(numberToDisplay)}`;
 
 	if(output === ""){
 		return `Sorry, there are no purchases above the price of $${min}`;
