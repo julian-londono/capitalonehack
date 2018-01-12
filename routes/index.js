@@ -29,9 +29,17 @@ router.post('/', function(req, res) {
             // Analysis of user financial behaviours
 
             const actionType = req.body.queryResult.parameters.entityAnalysis; //Transactions, Habits, and Advice
-            console.log(actionType)
+            if(actionType === 'Transactions'){
+                response = helpers.analyzeTransactions();
+            } else if (actionType === 'Habits'){
+                response = helpers.analyzeHabits();
+            } else if(actionType === 'Advice'){
+                response = helpers.giveGeneralAdvice();
+            } else{
+                response = "I can't think of much advice right now...try again later?";
+            }
 
-            sendResponse('No logic here for actionAnalysis...awkward...');
+            sendResponse(response);
         },
         'actionAvailable': () => {
             // Get avaliable credit

@@ -130,7 +130,25 @@ function getAccountBalance(accountType){
 	return usersData[accountType];
 }
 
+function analyzeTransactions(){
+
+    return 'a';
+}
+
+function analyzeHabits(){
+
+    return 'a';
+}
+
+function giveGeneralAdvice(){
+
+    return 'a';
+}
+
 module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
 module.exports.getBills = getBills;
 module.exports.getAccountBalance = getAccountBalance;
+module.exports.analyzeTransactions = analyzeTransactions;
+module.exports.analyzeHabits = analyzeHabits;
+module.exports.giveGeneralAdvice = giveGeneralAdvice;
