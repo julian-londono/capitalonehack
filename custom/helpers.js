@@ -222,3 +222,4 @@ module.exports.getSpending = getSpending;
 module.exports.analyzeTransactions = analyzeTransactions;
 module.exports.analyzeHabits = analyzeHabits;
 module.exports.giveGeneralAdvice = giveGeneralAdvice;
+module.exports.getLastBills = getLastBills;
