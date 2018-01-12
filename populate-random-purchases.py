@@ -18,12 +18,15 @@ with open('categories.json') as json_data:
 #         print (key)
 
 with open('userdata.json') as json_data:
-    userdata = json.load (json_data)
-purchasesJson = {"purchases": []}
-for x in range(2):
+    userdata = json.load(json_data)
+purchasesJson = []
+for x in range(100):
     randomPurchase = random.choice(data.keys())
-    purchasesJson["purchases"].append({"amount": 10,
+    purchasesJson.append({"amount": random.randint(1,101),
+                    "category": data.get(randomPurchase),
                     "type": randomPurchase})
 # print(purchasesJson)
-print(userdata["Users"][0])
-    # print(random.choice(itemList.keys())+ ": $" + str(random.randint(1,101)))
+# print(userdata)
+userdata["Users"][2]["purchases"] = purchasesJson
+with open('userdata.json', 'w') as outfile:
+    json.dump(userdata, outfile)
