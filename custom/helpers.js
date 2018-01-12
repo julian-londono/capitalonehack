@@ -156,8 +156,6 @@ function getSpending(category){
 function analyzeTransactions(){
     const user = auth.getCurrentUserData(); // get current user data
 
-    
-
     return 'a';
 }
 
