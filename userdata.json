@@ -417,7 +417,7 @@
       "amount": 27,
       "type": "Electricity"
     }],
-    "name": "Student",
+    "name": "Adam",
     "remainingCredit": 1200,
     "savings": 700,
     "balance": 4000,
@@ -852,7 +852,7 @@
       "amount": 123,
       "type": "Real Estate Agent"
     }],
-    "name": "Older Guy",
+    "name": "Jason",
     "remainingCredit": 3000,
     "savings": 70000,
     "balance": 12000,
@@ -1268,7 +1268,7 @@
       "type": "Wholesale"
     }],
     "bills": {},
-    "name": "Young Girl",
+    "name": "Sally",
     "remainingCredit": 0,
     "savings": 350,
     "balance": 50,

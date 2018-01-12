@@ -1,6 +1,7 @@
 // ROUTE FILE BASE URI IS '/'
 
 const express = require('express');
+const fs = require('fs');
 const router = express.Router();
 
 const constants = require('../constants'); // separate module for constants
@@ -79,6 +80,23 @@ router.post('/', function(req, res) {
                             your checking account has $${helpers.getAccountBalance('balance')}`;
             }
 
+            sendResponse(response);
+        },
+        'actionLogin': () => {
+            let newUser = parameters["given-name"];
+            let response = "";
+
+            if (newUser == "Sally" || newUser == "Adam" || newUser == "Jason")
+            {
+                user_credentials.name = newUser;
+                console.log("User Credentials");
+                fs.writeFile('credentials.json', JSON.stringify(user_credentials), 'utf8', function(err){
+                    console.log(err);
+                });
+                response += `Successfully switched users to ${newUser}.`
+            } else {
+                response += `Sorry, ${newUser} is not an valid user.`
+            }
             sendResponse(response);
         },
         'actionTransactions': () => {
