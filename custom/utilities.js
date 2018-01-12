@@ -4,4 +4,15 @@ function toTitleCase(str){
     });
 }
 
+function getCategoryIndex(categoryToFind, arr){
+    for (let i = 0; i < arr.length; i++){
+        if(arr[i].category === categoryToFind){
+            return i;
+        }
+	}
+
+    return -1;
+}
+
 module.exports.toTitleCase = toTitleCase;
+module.exports.getCategoryIndex = getCategoryIndex;

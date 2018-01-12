@@ -2,6 +2,7 @@ const user_data = require('../userdata.json'); // static user data
 
 const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
 const auth = require('../custom/auth'); // pseudo authentication and authorization
+const util = require('../custom/utilities'); // general utilities
 
 // returns bill object if bill exists
 // returns empty object if bill does not exist
@@ -150,7 +151,6 @@ function getSpending(category){
 		return parseFloat(b.amount) - parseFloat(a.amount);
 	});
 
-    console.dir(purchasesInCategory)
 	return `You have spent a total of $${sum} on ${category}, with the most expensive individual purchase of $${purchasesInCategory[0].amount} being spent on ${purchasesInCategory[0].type}. `;
 }
 
@@ -200,9 +200,55 @@ function analyzeTransactions(){
 }
 
 function analyzeHabits(){
-    const user = auth.getCurrentUserData(); // get current user data
+    const userData = auth.getCurrentUserData(); // get current user data
 
-    return 'a';
+    // Setup and get what we need to make calculations
+    let purchases = userData.purchases;
+	purchases = purchases.sort(function(a,b) {
+		return parseFloat(b.amount) - parseFloat(a.amount);
+	});
+
+	if (purchases.length === 0){
+		return "There are no purchases logged to this account.";
+	}
+
+    let output = "In regards to your spending habits let's first look at where your money is going. So let me break this down by category: ";
+
+    let categories = [];
+
+    for (let i = 0; i < purchases.length; i++){
+        const indexOfCategory = util.getCategoryIndex(purchases[i].category, categories);
+		if (indexOfCategory != -1){
+            // Update current instance of count
+            const previousAmount = categories[indexOfCategory].totalSpend;
+            const currentPurchaseAmount = purchases[i].amount;
+            categories[indexOfCategory].totalSpend =  currentPurchaseAmount + previousAmount;
+		} else{
+            //Add the category and initialize the count
+            categories.push({
+                category: purchases[i].category,
+                totalSpend: purchases[i].amount
+            })
+        }
+	}
+
+    let categoriesString = "";
+    for (let i = 0; i < categories.length; i++){
+        if(i != categories.length - 1){
+            categoriesString += `$${categories[i].totalSpend} on ${categories[i].category}, `;
+            categoriesString += `,, and `;
+        }
+
+        if(i == categories.length - 1){
+            categoriesString += `$${categories[i].totalSpend} on ${categories[i].category}.`;
+        }
+
+	}
+
+    output += `You've spent ${categoriesString}. I see room for improvement. Would you like more insight?`
+
+
+    return output;
 }
 
 function giveGeneralAdvice(){
