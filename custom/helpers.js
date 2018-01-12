@@ -44,7 +44,6 @@ function payBills(billType) {
     // if the account has bills associated with it
     if (bills.length) {
         // if there is no bill w/ that name
-        console.log(typeof billType);
         if (billType == "") {
             output += 'Would you like to pay off all your bills?';
         }
@@ -270,6 +269,7 @@ function giveGeneralAdvice(){
 
 module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
+module.exports.getLastBills = getLastBills;
 module.exports.payBills = payBills;
 module.exports.getAccountBalance = getAccountBalance;
 module.exports.getSpending = getSpending;

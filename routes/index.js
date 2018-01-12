@@ -149,6 +149,10 @@ router.post('/', function(req, res) {
             let response = helpers.payBills(billType);
             sendResponse(response);
         },
+        'imageCard': () => {
+            // Serve image card
+
+        },
         'actionSubscription': () => {
             // Get any subscriptions a user has
 
