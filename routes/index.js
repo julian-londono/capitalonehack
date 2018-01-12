@@ -31,6 +31,7 @@ router.post('/', function(req, res) {
             const actionType = req.body.queryResult.parameters.entityAnalysis; //Transactions, Habits, and Advice
             if(actionType === 'Transactions'){
                 response = helpers.analyzeTransactions();
+                response += " Would you like advice on how to improve your purchase distribution?";
             } else if (actionType === 'Habits'){
                 response = helpers.analyzeHabits();
             } else if(actionType === 'Advice'){

@@ -154,7 +154,6 @@ function getSpending(category){
 	return `You have spent a total of $${sum} on ${category}, with the most expensive individual purchase of $${purchasesInCategory[0].amount} being spent on ${purchasesInCategory[0].type}. `;
 }
 
-// Ben & Richard
 function analyzeTransactions(){
     const userData = auth.getCurrentUserData(); // get current user data
 
@@ -195,23 +194,20 @@ function analyzeTransactions(){
 
     output += `Of ${totalPurchases} purchases, ${cheapPurchasePercent}% are what I'd call cheap, that is 0 to $19.
                ${midRangePercent}% of your purchases range from $20 to $49, and finally ${expensivePercent}% of your
-               purchases are pricier going past the $50 mark. Would you like advice on how to improve your purchase distribution?`
+               purchases are pricier going past the $50 mark.`
 
     return output;
 }
 
-// Ben & Richard
 function analyzeHabits(){
     const user = auth.getCurrentUserData(); // get current user data
 
     return 'a';
 }
 
-// Julian & Nick
 function giveGeneralAdvice(){
-    const user = auth.getCurrentUserData(); // get current user data
-
-    return 'a';
+    let output = `${analyzeTransactions()} ${analyzeHabits()}`;
+    return output;
 }
 
 module.exports.getTrans = getTrans;
@@ -222,4 +218,3 @@ module.exports.getSpending = getSpending;
 module.exports.analyzeTransactions = analyzeTransactions;
 module.exports.analyzeHabits = analyzeHabits;
 module.exports.giveGeneralAdvice = giveGeneralAdvice;
-module.exports.getLastBills = getLastBills;
