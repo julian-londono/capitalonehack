@@ -5,6 +5,7 @@ const router = express.Router();
 
 const constants = require('../constants'); // separate module for constants
 const helpers = require('../custom/helpers'); // custom helpers we can use
+const utilities = require('../custom/utilities'); // general utilities
 
 const user_data = require('../userdata.json'); // static user data
 const user_credentials = require('../credentials.json'); // user credentials
@@ -25,7 +26,10 @@ router.post('/', function(req, res) {
             sendResponse('Hey there!'); // Send simple response to user
         },
         'actionAnalysis': () => {
-            // Analysis of money habits
+            // Analysis of user financial behaviours
+
+            const actionType = req.body.queryResult.parameters.entityAnalysis; //Transactions, Habits, and Advice
+            console.log(actionType)
 
             sendResponse('No logic here for actionAnalysis...awkward...');
         },
@@ -106,7 +110,7 @@ router.post('/', function(req, res) {
         },
         'actionBillPay': () => {
             // Pay a certain type of specified bill type
-            let billType = helpers.toTitleCase(parameters.billType);
+            let billType = utilities.toTitleCase(parameters.billType);
             response = helpers.getBills(billType);
             sendResponse(response);
         },

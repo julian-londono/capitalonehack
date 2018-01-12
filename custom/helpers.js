@@ -1,4 +1,5 @@
 const user_data = require('../userdata.json'); // static user data
+
 const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
 const auth = require('../custom/auth'); // pseudo authentication and authorization
 
@@ -11,11 +12,6 @@ function checkBillExists(billType, bills) {
         }
     }
     return {};
-}
-
-function toTitleCase(str)
-{
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
 
 function getBills(billType) {
@@ -115,4 +111,3 @@ module.exports.getTrans = getTrans;
 module.exports.getLargePurchases = getLargePurchases;
 module.exports.getBills = getBills;
 module.exports.getAccountBalance = getAccountBalance;
-module.exports.toTitleCase = toTitleCase;
