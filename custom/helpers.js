@@ -29,8 +29,8 @@ function getBills(billType) {
     // if the account has bills associated with it
     if (bills.length) {
         // if there is no bill w/ that name
-        console.log(billType);
-        if (billType == undefined) {
+        console.log(typeof billType);
+        if (billType == "") {
             output += 'Would you like to pay off all your bills?';
         }
         // if there are no parameters provided
