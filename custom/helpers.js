@@ -1,18 +1,9 @@
 const user_data = require('../userdata.json'); // static user data
-const riskanalysis = require('../custom/riskanalysis'); // static user data
-
-function currentUser(){
-	const credentials = require("../credentials.json");
-	for(int i = 0; i < user_data.Users.length; i++){
-		if(user_data.Users[i].name == credentials.name)
-			return user_data.Users[i];
-		}
-	}
-	console.log("Error");
-	return user_data.Users[0];
-}
+const riskAnalysis = require('../custom/riskAnalysis'); // risk analysis module
+const auth = require('../custom/auth'); // pseudo authentication and authorization
 
 function getTrans(num){
+<<<<<<< HEAD
 	const usersData = currentUser();
 	if(num <= 0){
 		num = 5;
@@ -28,14 +19,14 @@ function getTrans(num){
 		}
 	}
 	return output;
+=======
+	const firstUsersData = auth.getCurrentUserData();
+>>>>>>> 2d1ce75b3edce4c35374cafff9d5d2e7a13ba15a
 }
 
-function getLargePurchases(min){
+function getLargePurchases(min, numberToDisplay){
 
-	const firstUsersData = currentUser(); // Data for first user
-
-	const numberToDisplay = 3;
-
+	const firstUsersData = auth.getCurrentUserData();
 
 	let purchases = firstUsersData.purchases;
 	purchases = purchases.sort(function(a,b) {
@@ -47,6 +38,8 @@ function getLargePurchases(min){
 	}
 
 	let output = "";
+
+	output += `Here are your top ${numberToDisplay} most expensive purchases. `;
 
 	for (let i = 0; i < purchases.length;i++){
 		if (i < numberToDisplay && purchases[i].amount >= min){
