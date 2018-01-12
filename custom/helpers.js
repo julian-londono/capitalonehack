@@ -153,18 +153,21 @@ function getSpending(category){
 	return `You have spent a total of ${sum} on ${category}, with the most expensive individual purchase of $${purchasesInCategory[0].amount} being spent on ${purchasesInCategory[0].type}. `;
 }
 
+// Ben & Richard
 function analyzeTransactions(){
     const user = auth.getCurrentUserData(); // get current user data
 
     return 'a';
 }
 
+// Ben & Richard
 function analyzeHabits(){
     const user = auth.getCurrentUserData(); // get current user data
 
     return 'a';
 }
 
+// Julian & Nick
 function giveGeneralAdvice(){
     const user = auth.getCurrentUserData(); // get current user data
     
