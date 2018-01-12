@@ -14,12 +14,12 @@
       "type": "Gas Stations"
     }, {
       "category": "Food and Drinks",
-      "amount": 98,
+      "amount": 88,
       "type": "Middle Eastern"
     }, {
       "category": "Shops",
       "amount": 96,
-      "type": "Boat Dealers"
+      "type": "Boat Dealer"
     }, {
       "category": "Recreation",
       "amount": 93,
@@ -138,12 +138,12 @@
       "type": "Gas Stations"
     }, {
       "category": "Recreation",
-      "amount": 101,
-      "type": "Mountains"
+      "amount": 96,
+      "type": "Mountain Climbing"
     }, {
       "category": "Travel",
       "amount": 100,
-      "type": "Car Service"
+      "type": "Car Repair"
     }, {
       "category": "Shops",
       "amount": 7,
@@ -291,7 +291,7 @@
     }, {
       "category": "Travel",
       "amount": 100,
-      "type": "Cruises"
+      "type": "Cruise"
     }, {
       "category": "Travel",
       "amount": 83,
@@ -374,7 +374,7 @@
       "type": "Outdoors"
     }, {
       "category": "Shops",
-      "amount": 97,
+      "amount": 87,
       "type": "Women's Store"
     }, {
       "category": "Travel",
@@ -569,7 +569,7 @@
       "type": "Electrical Equipment"
     }, {
       "category": "Food and Drinks",
-      "amount": 101,
+      "amount": 99,
       "type": "Scandinavian Food"
     }, {
       "category": "Services",
