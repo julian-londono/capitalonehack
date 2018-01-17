@@ -1,12 +1,13 @@
 # capitalonehack
 
 <h2>LATIPAC</h2>
-Your personal financial assistant bot.
+Your personal financial assistant chat bot.
 
+<br>
 <br>
 Made at the Capital One Software Engineering Summit Hackathon by
 Nicolas Buitrago, Benyam Ephrem, Julian Londono, Glenn Ren, Richard Wang
-
+<br>
 Started: 1/11/18
 Ended: 1/12/18
 
